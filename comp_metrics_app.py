@@ -136,8 +136,8 @@ if submit_button:
 
     first_day_df['period_quality'] = first_day_df.apply(classify_quality, axis=1)
 
-    first_day_df = first_day_df.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'period_quality', 'income_growth']]
-    first_day_df.rename(columns={"rev_pasf_rank": "Rev. Rank", "prev_rank": "Prev. Rev. Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
+    first_day_df = first_day_df.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'period_quality', 'rev_pasf', 'income_growth']]
+    first_day_df.rename(columns={"rev_pasf": "Rev/Avail Sqft.", "rev_pasf_rank": "Rank", "prev_rank": "Prev. Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
 
     def highlight_quality(val):
         if val == 'Good':
@@ -161,8 +161,9 @@ if submit_button:
         first_day_df
         .style
         .format({
-            'Rev. Rank': '{:.0f}',
-            'Prev. Rev. Rank': '{:.0f}',
+            'Rev/Avail Sqft.': '${:.3f}',
+            'Rank': '{:.0f}',
+            'Prev. Rank': '{:.0f}',
             'Rental Income Growth/Decline': lambda x: f"${abs(x):,.0f}"
         })
         .applymap(highlight_quality, subset=['Quality'])
