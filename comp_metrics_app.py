@@ -107,17 +107,17 @@ if submit_button:
 
     if time_frame == 'MoM':
         metrics_selected['period'] = metrics_selected['date'].dt.to_period('M').dt.to_timestamp()
-        metrics_selected = metrics_selected.merge(month_metrics, left_on="period", right_on="month")
+        metrics_selected = metrics_selected.merge(month_metrics, left_on="period", right_on="month", how="left")
         metrics_selected['Time Period'] = metrics_selected['period'].dt.strftime('%b %Y')
     elif time_frame == 'QoQ':
         metrics_selected['period'] = metrics_selected['date'].dt.to_period('Q').dt.to_timestamp()
-        metrics_selected = metrics_selected.merge(quarter_metrics, left_on="period", right_on="quarter")
+        metrics_selected = metrics_selected.merge(quarter_metrics, left_on="period", right_on="quarter", how="left")
         q = metrics_selected['period'].dt.quarter
         y = metrics_selected['period'].dt.year
         metrics_selected['Time Period'] = ['Q' + str(qq) + ' ' + str(yy) for qq, yy in zip(q, y)]
 
     # Get the first date of each period
-    first_day_df = metrics_selected.sort_values('date').groupby(['period', 'Time Period', 'Amount']).first().reset_index()
+    first_day_df = metrics_selected.sort_values('date').groupby(['period', 'Time Period']).first().reset_index()
 
     first_day_df['prev_rank'] = first_day_df['rev_pasf_rank'].shift(1)
 
