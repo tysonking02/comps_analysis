@@ -169,5 +169,5 @@ if submit_button:
         .applymap(highlight_growth, subset=['Rental Income Growth/Decline'])
     )
 
-    st.subheader(f"{time_frame} Rev PASF Rank for {selected_property}")
+    st.subheader(f"{time_frame} Rev / Avail Sqft. Rank for {selected_property}")
     st.dataframe(styled_df)
