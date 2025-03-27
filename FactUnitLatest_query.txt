@@ -1,0 +1,2 @@
+select distinct AssetCode, osl_UnitNumber, FloorPlanGroupName
+from ops_FactUnitLatest;
