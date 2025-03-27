@@ -15,8 +15,8 @@ HEADERS = {
     "x-api-key": api_key
 }
 
-dimasset = pd.read_csv('comps_analysis/data/DimAsset.csv')
-factunitlatest = pd.read_csv('comps_analysis/data/FactUnitLatest_filtered.csv')
+dimasset = pd.read_csv('data/DimAsset.csv')
+factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
 
 # region Helper Functions
 
