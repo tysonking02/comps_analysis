@@ -269,6 +269,7 @@ def get_comp_net_leased(property, streamlit=False, status=None):
     property_details = fetch_property_details(property_id)
 
     history_df, num_units = get_unit_history(property_details)
+    
     net_leased_df = get_net_leased(history_df, num_units)
 
     for i in range(len(comps)):
@@ -288,6 +289,9 @@ def get_comp_net_leased(property, streamlit=False, status=None):
         property_details = fetch_property_details(property_id=property_id)
 
         history_df, num_units = get_unit_history(property_details=property_details)
+
+        if len(history_df) == 0:
+            next 
 
         net_leased_df = pd.concat([
             net_leased_df,
@@ -377,6 +381,9 @@ def get_rolling_rates(unit_history, building_name, cortland_mix):
 
             rolling_rates = pd.concat([rolling_rates, cur_rolling_rates], ignore_index=True)
 
+    if len(rolling_rates) == 0:
+        return pd.DataFrame()
+
     return rolling_rates.sort_values(by="date", ascending=True).reset_index(drop=True)
 
 def get_comp_rolling_rates(property, streamlit=False, status=None):
@@ -429,6 +436,7 @@ def get_comp_rolling_rates(property, streamlit=False, status=None):
             property_id = property_data[0].get("id")
             property_details = fetch_property_details(property_id)
             unit_history, num_units = get_unit_history(property_details)
+
             cur_rolling_rates = get_rolling_rates(unit_history, building_name, cortland_mix)
 
             rolling_rates_df = pd.concat([rolling_rates_df, cur_rolling_rates])
@@ -442,7 +450,7 @@ def get_comp_rolling_rates(property, streamlit=False, status=None):
 
 # region Aggregate Metrics from Net Leased and Rent Roll
 
-def get_comp_metrics(property, streamlit=False):
+def get_comp_metrics(property, streamlit=False, status=None):
 
     if streamlit:
         status = st.empty()
@@ -467,11 +475,11 @@ def get_comp_metrics(property, streamlit=False):
 
 def main():
 
-    property = "Cortland Uptown Buckhead"
+    property = "1000 Spalding"
 
     metrics = get_comp_metrics(property)
 
-    metrics.to_csv(f"comps_analysis/data/{property} Comp Metrics.csv")
+    metrics.to_csv(f"data/{property} Comp Metrics.csv")
 
 
 if __name__ == "__main__":
