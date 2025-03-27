@@ -1,0 +1,8 @@
+select AssetCode, MonthID, Amount, GLAccountGroupName
+from acct_FactGLAccountGroupTotal
+where GLAccountGroupName = 'IS - Rental Income' and 
+	  FinanceType = 'Actuals' and
+	  IsClosedAcctPeriod = 1 and
+	  IsFullMonth = 1 and
+	  AssetCode is not null and
+	  MonthID >= 202401;

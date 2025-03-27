@@ -13,6 +13,7 @@ factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
 st.header("Revenue Period Quality Analysis")
 
 selected_property = st.selectbox("Select Property", sorted(dimasset['AssetName'].unique()))
+selected_asset_code = dimasset[dimasset['AssetName'] == selected_property]['AssetCode'].iloc[0]
 
 time_frame = st.radio("Aggregation Time Frame", ["MoM", "QoQ"])
 
@@ -88,22 +89,40 @@ if submit_button:
 
     st.altair_chart(chart, use_container_width=True)
 
+    income_metrics = factaccountgrouptotal[factaccountgrouptotal['AssetCode'] == selected_asset_code]
+
+    month_metrics = income_metrics
+    month_metrics["month"] = pd.to_datetime(income_metrics["MonthID"], format='%Y%m')
+
+    quarter_metrics = income_metrics
+    income_metrics["quarter"] = income_metrics["month"].dt.to_period('Q').dt.to_timestamp()
+    quarter_metrics = income_metrics.groupby('quarter').agg(
+        Amount=('Amount', 'sum'),
+        count=('month', 'count')
+    ).reset_index()
+
+    quarter_metrics = quarter_metrics[quarter_metrics['count'] == 3]
 
     metrics_selected.sort_values('date', ascending=True, inplace=True)
 
     if time_frame == 'MoM':
         metrics_selected['period'] = metrics_selected['date'].dt.to_period('M').dt.to_timestamp()
+        metrics_selected = metrics_selected.merge(month_metrics, left_on="period", right_on="month")
         metrics_selected['Time Period'] = metrics_selected['period'].dt.strftime('%b %Y')
     elif time_frame == 'QoQ':
         metrics_selected['period'] = metrics_selected['date'].dt.to_period('Q').dt.to_timestamp()
+        metrics_selected = metrics_selected.merge(quarter_metrics, left_on="period", right_on="quarter")
         q = metrics_selected['period'].dt.quarter
         y = metrics_selected['period'].dt.year
         metrics_selected['Time Period'] = ['Q' + str(qq) + ' ' + str(yy) for qq, yy in zip(q, y)]
 
     # Get the first date of each period
-    first_day_df = metrics_selected.sort_values('date').groupby(['period', 'Time Period']).first().reset_index()
+    first_day_df = metrics_selected.sort_values('date').groupby(['period', 'Time Period', 'Amount']).first().reset_index()
 
     first_day_df['prev_rank'] = first_day_df['rev_pasf_rank'].shift(1)
+
+    first_day_df['prev_income'] = first_day_df['Amount'].shift(1)
+    first_day_df['income_growth'] = first_day_df['Amount'] - first_day_df['prev_income']
 
     def classify_quality(row):
         if pd.isna(row['prev_rank']):
@@ -117,8 +136,8 @@ if submit_button:
 
     first_day_df['period_quality'] = first_day_df.apply(classify_quality, axis=1)
 
-    first_day_df = first_day_df.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'period_quality']]
-    first_day_df.rename(columns={"rev_pasf_rank": "Rev. Rank", "prev_rank": "Prev. Rev. Rank", "period_quality": "Quality"}, inplace=True)
+    first_day_df = first_day_df.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'period_quality', 'income_growth']]
+    first_day_df.rename(columns={"rev_pasf_rank": "Rev. Rank", "prev_rank": "Prev. Rev. Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
 
     def highlight_quality(val):
         if val == 'Good':
@@ -127,12 +146,27 @@ if submit_button:
             return 'color: red; font-weight: bold'
         else:
             return ''
+        
+    def highlight_growth(val):
+        try:
+            if val > 0:
+                return 'color: green; font-weight: bold'
+            elif val < 0:
+                return 'color: red; font-weight: bold'
+        except:
+            pass
+        return ''
 
     styled_df = (
         first_day_df
         .style
-        .format({'Rev. Rank': '{:.0f}', 'Prev. Rev. Rank': '{:.0f}'})
+        .format({
+            'Rev. Rank': '{:.0f}',
+            'Prev. Rev. Rank': '{:.0f}',
+            'Rental Income Growth/Decline': lambda x: f"${abs(x):,.0f}"
+        })
         .applymap(highlight_quality, subset=['Quality'])
+        .applymap(highlight_growth, subset=['Rental Income Growth/Decline'])
     )
 
     st.subheader(f"{time_frame} Rev PASF Rank for {selected_property}")

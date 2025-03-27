@@ -17,6 +17,7 @@ HEADERS = {
 
 dimasset = pd.read_csv('data/DimAsset.csv')
 factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
+factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal_filtered.csv')
 
 # region Helper Functions
 
@@ -468,6 +469,8 @@ def get_comp_metrics(property, streamlit=False, status=None):
     
     metrics['year_month'] = metrics['date'].dt.to_period('M').astype(str)
     metrics['quarter'] = 'Q' + metrics['date'].dt.quarter.astype(str) + ' ' + metrics['date'].dt.year.astype(str)
+
+    status.text = ""
 
     return metrics
 
