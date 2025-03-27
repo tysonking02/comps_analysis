@@ -1,4 +1,4 @@
-# streamlit run comps_analysis/comp_metrics_app.py
+# streamlit run comp_metrics_app.py
 
 from aggregate_hellodata import *
 import streamlit as st
@@ -7,8 +7,8 @@ import altair as alt
 from pathlib import Path
 import itertools
 
-dimasset = pd.read_csv('comps_analysis/data/DimAsset.csv')
-factunitlatest = pd.read_csv('comps_analysis/data/FactUnitLatest_filtered.csv')
+dimasset = pd.read_csv('data/DimAsset.csv')
+factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
 
 st.header("Revenue Period Quality Analysis")
 
@@ -20,11 +20,11 @@ submit_button = st.button("Submit")
 
 if submit_button:
     
-    if Path(f'comps_analysis/data/{selected_property} Comp Metrics.csv').is_file():
-        metrics = pd.read_csv(f'comps_analysis/data/{selected_property} Comp Metrics.csv')
+    if Path(f'data/{selected_property} Comp Metrics.csv').is_file():
+        metrics = pd.read_csv(f'data/{selected_property} Comp Metrics.csv')
     else:
         metrics = get_comp_metrics(selected_property, streamlit=True)
-        metrics.to_csv(f"comps_analysis/data/{selected_property} Comp Metrics.csv")
+        metrics.to_csv(f"data/{selected_property} Comp Metrics.csv")
 
     metrics['date'] = pd.to_datetime(metrics['date'])
 
