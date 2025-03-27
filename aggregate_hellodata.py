@@ -16,6 +16,10 @@ HEADERS = {
 }
 
 dimasset = pd.read_csv('data/DimAsset.csv')
+assetdetailactive = pd.read_csv('data/vw_AssetDetailActive.csv', usecols=['AssetCode'])
+
+dimasset = dimasset.merge(assetdetailactive, on='AssetCode')
+
 factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
 factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal_filtered.csv')
 

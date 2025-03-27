@@ -1,4 +1,4 @@
-select AssetCode, MonthID, Amount, GLAccountGroupName
+select AssetCode, MonthID, Amount
 from acct_FactGLAccountGroupTotal
 where GLAccountGroupName = 'IS - Rental Income' and 
 	  FinanceType = 'Actuals' and
