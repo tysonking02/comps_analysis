@@ -62,6 +62,8 @@ if submit_button:
         range=list(color_mapping.values())
     )
 
+    acquisition_date = dimasset[dimasset['AssetCode'] == selected_asset_code]['AcquisitionDate'].iloc[0]
+
     # Unified chart with visual emphasis
     chart = alt.Chart(metrics).mark_line().encode(
         x=alt.X(
@@ -90,6 +92,32 @@ if submit_button:
         width=800,
         height=400
     ).interactive()
+
+    if acquisition_date >= "2024-01-01":
+
+        label_data = pd.DataFrame({'date': [acquisition_date], 'label': ['Acquisition Date'], 'y_pos': [ymax-0.1]})
+
+        rule = alt.Chart(label_data).mark_rule(
+            strokeDash=[6, 4], color='black'
+        ).encode(
+            x='date:T'
+        )
+
+        label = alt.Chart(label_data).mark_text(
+            align='left',
+            dx=6,
+            angle=0,
+            fontSize=12,
+            fontWeight='bold'
+        ).encode(
+            x='date:T',
+            y='y_pos:Q',
+            text='label'
+        )
+
+
+        # Combine chart and rule
+        chart = (chart + rule + label).interactive()
 
     st.altair_chart(chart, use_container_width=True)
 

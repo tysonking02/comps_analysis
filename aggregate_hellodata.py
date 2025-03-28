@@ -51,7 +51,7 @@ def fetch_property_data(property, lat=None, lon=None, zip_code=None):
     if lat is not None and lon is not None:
         querystring["lat"] = lat
         querystring["lon"] = lon
-        querystring["max_distance"] = 0.1
+        querystring["max_distance"] = 0.2
 
     if zip_code is not None:
         querystring['zip_code'] = zip_code
@@ -474,7 +474,8 @@ def get_comp_metrics(property, streamlit=False, status=None):
     metrics['year_month'] = metrics['date'].dt.to_period('M').astype(str)
     metrics['quarter'] = 'Q' + metrics['date'].dt.quarter.astype(str) + ' ' + metrics['date'].dt.year.astype(str)
 
-    status.text = ""
+    if streamlit:
+        status = st.empty()
 
     return metrics
 
