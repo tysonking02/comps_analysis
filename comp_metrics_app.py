@@ -1,6 +1,5 @@
 # streamlit run comp_metrics_app.py
 
-from aggregate_hellodata import *
 import streamlit as st
 import pandas as pd
 import altair as alt
@@ -14,6 +13,9 @@ assetdetailactive = pd.read_csv('data/vw_AssetDetailActive.csv', usecols=['Asset
 dimasset = dimasset.merge(assetdetailactive, on='AssetCode')
 
 factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
+
+factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal_filtered.csv')
+
 
 st.header("Revenue Period Quality Analysis")
 
