@@ -6,9 +6,10 @@ import pandas as pd
 import altair as alt
 from pathlib import Path
 import itertools
+import os
 
 dimasset = pd.read_csv('data/DimAsset.csv')
-assetdetailactive = pd.read_csv('data/vw_AssetDetailActive.csv', usecols=['AssetCode'])
+assetdetailactive = pd.read_csv('data/vw_AssetDetailActive.csv', usecols=['AssetCode', 'ParentAssetName'])
 
 dimasset = dimasset.merge(assetdetailactive, on='AssetCode')
 
@@ -16,8 +17,11 @@ factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
 
 st.header("Revenue Period Quality Analysis")
 
-selected_property = st.selectbox("Select Property", sorted(dimasset['AssetName'].unique()))
-selected_asset_code = dimasset[dimasset['AssetName'] == selected_property]['AssetCode'].iloc[0]
+property_list = os.listdir('data/HelloData/comp_metrics')
+property_list = [filename.replace(' Comp Metrics.csv', '') for filename in property_list]
+
+selected_property = st.selectbox("Select Property", sorted(property_list))
+selected_asset_code = dimasset[dimasset['ParentAssetName'] == selected_property]['AssetCode'].iloc[0]
 
 time_frame = st.radio("Aggregation Time Frame", ["MoM", "QoQ"])
 
@@ -25,17 +29,16 @@ submit_button = st.button("Submit")
 
 if submit_button:
     
-    if Path(f'data/{selected_property} Comp Metrics.csv').is_file():
-        metrics = pd.read_csv(f'data/{selected_property} Comp Metrics.csv')
+    if Path(f'data/HelloData/comp_metrics/{selected_property} Comp Metrics.csv').is_file():
+        metrics = pd.read_csv(f'data/HelloData/comp_metrics/{selected_property} Comp Metrics.csv')
     else:
-        metrics = get_comp_metrics(selected_property, streamlit=True)
-        metrics.to_csv(f"data/{selected_property} Comp Metrics.csv")
+        st.write(f"No data for {selected_property}")
 
     metrics['date'] = pd.to_datetime(metrics['date'])
 
-    st.subheader(f"{selected_property} vs. Comps")
+    metrics = metrics[metrics['date'] >= pd.to_datetime('2024-01-01')]
 
-    metrics_selected = metrics[metrics['property'] == selected_property]
+    st.subheader(f"{selected_property} vs. Comps")
 
     ymin = metrics['rev_pasf'].min() - 0.2
     ymax = metrics['rev_pasf'].max() + 0.2
@@ -135,26 +138,34 @@ if submit_button:
 
     quarter_metrics = quarter_metrics[quarter_metrics['count'] == 3]
 
-    metrics_selected.sort_values('date', ascending=True, inplace=True)
+    metrics.sort_values('date', ascending=True, inplace=True)
 
     if time_frame == 'MoM':
-        metrics_selected['period'] = metrics_selected['date'].dt.to_period('M').dt.to_timestamp()
-        metrics_selected = metrics_selected.merge(month_metrics, left_on="period", right_on="month", how="left")
-        metrics_selected['Time Period'] = metrics_selected['period'].dt.strftime('%b %Y')
+        metrics['period'] = metrics['date'].dt.to_period('M').dt.to_timestamp()
+        metrics = metrics.merge(month_metrics, left_on="period", right_on="month", how="left")
+        metrics['Time Period'] = metrics['period'].dt.strftime('%b %Y')
     elif time_frame == 'QoQ':
-        metrics_selected['period'] = metrics_selected['date'].dt.to_period('Q').dt.to_timestamp()
-        metrics_selected = metrics_selected.merge(quarter_metrics, left_on="period", right_on="quarter", how="left")
-        q = metrics_selected['period'].dt.quarter
-        y = metrics_selected['period'].dt.year
-        metrics_selected['Time Period'] = ['Q' + str(qq) + ' ' + str(yy) for qq, yy in zip(q, y)]
+        metrics['period'] = metrics['date'].dt.to_period('Q').dt.to_timestamp()
+        metrics = metrics.merge(quarter_metrics, left_on="period", right_on="quarter", how="left")
+        q = metrics['period'].dt.quarter
+        y = metrics['period'].dt.year
+        metrics['Time Period'] = ['Q' + str(qq) + ' ' + str(yy) for qq, yy in zip(q, y)]
 
     # Get the first date of each period
-    first_day_df = metrics_selected.sort_values('date').groupby(['period', 'Time Period']).first().reset_index()
+    avg_metrics = metrics.sort_values('date').groupby(['property', 'period', 'Time Period']).agg({
+        "rev_pasf": "mean",
+        "Amount": "first"
+    }).reset_index()
 
-    first_day_df['prev_rank'] = first_day_df['rev_pasf_rank'].shift(1)
 
-    first_day_df['prev_income'] = first_day_df['Amount'].shift(1)
-    first_day_df['income_growth'] = first_day_df['Amount'] - first_day_df['prev_income']
+    avg_metrics['rev_pasf_rank'] = avg_metrics.groupby(['period', 'Time Period'])['rev_pasf'].rank(method='dense', ascending=False)
+
+    avg_metrics['prev_rank'] = avg_metrics['rev_pasf_rank'].shift(1)
+
+    avg_metrics['prev_income'] = avg_metrics['Amount'].shift(1)
+    avg_metrics['income_growth'] = avg_metrics['Amount'] - avg_metrics['prev_income']
+
+    avg_metrics = avg_metrics[avg_metrics['property'] == selected_property]
 
     def classify_quality(row):
         if pd.isna(row['prev_rank']):
@@ -166,10 +177,10 @@ if submit_button:
         else:
             return 'Neutral'
 
-    first_day_df['period_quality'] = first_day_df.apply(classify_quality, axis=1)
+    avg_metrics['period_quality'] = avg_metrics.apply(classify_quality, axis=1)
 
-    first_day_df = first_day_df.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'period_quality', 'rev_pasf', 'income_growth']]
-    first_day_df.rename(columns={"rev_pasf": "Rev/Avail Sqft.", "rev_pasf_rank": "Rank", "prev_rank": "Prev. Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
+    avg_metrics = avg_metrics.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'period_quality', 'rev_pasf', 'income_growth']]
+    avg_metrics.rename(columns={"rev_pasf": "Rev/Avail Sqft.", "rev_pasf_rank": "Rank", "prev_rank": "Prev. Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
 
     def highlight_quality(val):
         if val == 'Good':
@@ -190,10 +201,10 @@ if submit_button:
         return ''
 
     styled_df = (
-        first_day_df
+        avg_metrics
         .style
         .format({
-            'Rev/Avail Sqft.': '${:.3f}',
+            'Rev/Avail Sqft.': '${:.2f}',
             'Rank': '{:.0f}',
             'Prev. Rank': '{:.0f}',
             'Rental Income Growth/Decline': lambda x: f"${abs(x):,.0f}"

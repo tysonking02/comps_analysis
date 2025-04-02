@@ -1,0 +1,1439 @@
+,building_name,unit_name,unit_group,sqft,effective_price,date,leased_rate
+0,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/22/2024,False
+1,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/23/2024,False
+2,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/24/2024,False
+3,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/25/2024,False
+4,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/26/2024,False
+5,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/27/2024,False
+6,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/28/2024,False
+7,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/29/2024,False
+8,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/30/2024,False
+9,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,10/31/2024,False
+10,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/01/2024,False
+11,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/02/2024,False
+12,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/03/2024,False
+13,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/04/2024,False
+14,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/05/2024,False
+15,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/06/2024,False
+16,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/07/2024,False
+17,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/08/2024,False
+18,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/09/2024,False
+19,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/10/2024,False
+20,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/11/2024,False
+21,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/12/2024,False
+22,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/13/2024,False
+23,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/14/2024,False
+24,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/15/2024,False
+25,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/16/2024,False
+26,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/17/2024,False
+27,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/18/2024,False
+28,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/19/2024,False
+29,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/20/2024,False
+30,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/21/2024,False
+31,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/22/2024,False
+32,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/23/2024,False
+33,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/24/2024,False
+34,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/25/2024,False
+35,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/26/2024,False
+36,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/27/2024,False
+37,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/28/2024,False
+38,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/29/2024,False
+39,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,11/30/2024,False
+40,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/01/2024,False
+41,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/02/2024,False
+42,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/03/2024,False
+43,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/04/2024,False
+44,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/05/2024,False
+45,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/06/2024,False
+46,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/07/2024,False
+47,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/08/2024,False
+48,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/09/2024,False
+49,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/10/2024,False
+50,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/11/2024,False
+51,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/12/2024,False
+52,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/13/2024,False
+53,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/14/2024,False
+54,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/15/2024,False
+55,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/16/2024,False
+56,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/17/2024,False
+57,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/18/2024,False
+58,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/19/2024,False
+59,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/20/2024,False
+60,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/21/2024,False
+61,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/22/2024,False
+62,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/23/2024,False
+63,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/24/2024,False
+64,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/25/2024,False
+65,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/26/2024,False
+66,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/27/2024,False
+67,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/28/2024,False
+68,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/29/2024,False
+69,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/30/2024,False
+70,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,12/31/2024,False
+71,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/01/2025,False
+72,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/02/2025,False
+73,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/03/2025,False
+74,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/04/2025,False
+75,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/05/2025,False
+76,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/06/2025,False
+77,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/07/2025,False
+78,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/08/2025,False
+79,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/09/2025,False
+80,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/10/2025,False
+81,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/11/2025,False
+82,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/12/2025,False
+83,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/13/2025,False
+84,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/14/2025,False
+85,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/15/2025,False
+86,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/16/2025,False
+87,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/17/2025,False
+88,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/18/2025,False
+89,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/19/2025,False
+90,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/20/2025,False
+91,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/21/2025,False
+92,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/22/2025,False
+93,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/23/2025,False
+94,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/24/2025,False
+95,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/25/2025,False
+96,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/26/2025,False
+97,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/27/2025,False
+98,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/28/2025,False
+99,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/29/2025,False
+100,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/30/2025,False
+101,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,01/31/2025,False
+102,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/01/2025,False
+103,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/02/2025,False
+104,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/03/2025,False
+105,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/04/2025,False
+106,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/05/2025,False
+107,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/06/2025,False
+108,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/07/2025,False
+109,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/08/2025,False
+110,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/09/2025,False
+111,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/10/2025,False
+112,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/11/2025,False
+113,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/12/2025,False
+114,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/13/2025,False
+115,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/14/2025,False
+116,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1225,02/15/2025,False
+117,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/16/2025,False
+118,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/17/2025,False
+119,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/18/2025,False
+120,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/19/2025,False
+121,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/20/2025,False
+122,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/21/2025,False
+123,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/22/2025,False
+124,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/23/2025,False
+125,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/24/2025,False
+126,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/25/2025,False
+127,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/26/2025,False
+128,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/27/2025,False
+129,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,02/28/2025,False
+130,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/01/2025,False
+131,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/02/2025,False
+132,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/03/2025,False
+133,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/04/2025,False
+134,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/05/2025,False
+135,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/06/2025,False
+136,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/07/2025,False
+137,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/08/2025,False
+138,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/09/2025,False
+139,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/10/2025,False
+140,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/11/2025,False
+141,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/12/2025,False
+142,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/13/2025,False
+143,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/14/2025,False
+144,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/15/2025,False
+145,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/16/2025,False
+146,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/17/2025,False
+147,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/18/2025,False
+148,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/19/2025,False
+149,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/20/2025,False
+150,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/21/2025,False
+151,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/22/2025,False
+152,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/23/2025,False
+153,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/24/2025,False
+154,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/25/2025,False
+155,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/26/2025,False
+156,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/27/2025,False
+157,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/28/2025,False
+158,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/29/2025,False
+159,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/30/2025,False
+160,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,03/31/2025,False
+161,Nirvana Breckenridge,2 BR 1 BA Platinum,2x1,1040,1300,04/01/2025,True
+162,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,09/24/2024,False
+163,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,09/25/2024,False
+164,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,09/26/2024,False
+165,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,09/27/2024,False
+166,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,09/28/2024,False
+167,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,09/29/2024,False
+168,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,09/30/2024,False
+169,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/01/2024,False
+170,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/02/2024,False
+171,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/03/2024,False
+172,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/04/2024,False
+173,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/05/2024,False
+174,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/06/2024,False
+175,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/07/2024,False
+176,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/08/2024,False
+177,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/09/2024,False
+178,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/10/2024,False
+179,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/11/2024,False
+180,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/12/2024,False
+181,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/13/2024,False
+182,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/14/2024,False
+183,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/15/2024,False
+184,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/16/2024,False
+185,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/17/2024,False
+186,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/18/2024,False
+187,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/19/2024,False
+188,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/20/2024,False
+189,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/21/2024,False
+190,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/22/2024,False
+191,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/23/2024,False
+192,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/24/2024,False
+193,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/25/2024,False
+194,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/26/2024,False
+195,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/27/2024,False
+196,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/28/2024,False
+197,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/29/2024,False
+198,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/30/2024,False
+199,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,10/31/2024,False
+200,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/01/2024,False
+201,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/02/2024,False
+202,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/03/2024,False
+203,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/04/2024,False
+204,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/05/2024,False
+205,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/06/2024,False
+206,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/07/2024,False
+207,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/08/2024,False
+208,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/09/2024,False
+209,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/10/2024,False
+210,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/11/2024,False
+211,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/12/2024,False
+212,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/13/2024,False
+213,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/14/2024,False
+214,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/15/2024,False
+215,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/16/2024,False
+216,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/17/2024,False
+217,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/18/2024,False
+218,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/19/2024,False
+219,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/20/2024,False
+220,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/21/2024,False
+221,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/22/2024,False
+222,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/23/2024,False
+223,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/24/2024,False
+224,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/25/2024,False
+225,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/26/2024,False
+226,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/27/2024,False
+227,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/28/2024,False
+228,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/29/2024,False
+229,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,11/30/2024,False
+230,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/01/2024,False
+231,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/02/2024,False
+232,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/03/2024,False
+233,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/04/2024,False
+234,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/05/2024,False
+235,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/06/2024,False
+236,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/07/2024,False
+237,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/08/2024,False
+238,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/09/2024,False
+239,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/10/2024,False
+240,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/11/2024,False
+241,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/12/2024,False
+242,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/13/2024,False
+243,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/14/2024,False
+244,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/15/2024,False
+245,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/16/2024,False
+246,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/17/2024,False
+247,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/18/2024,False
+248,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/19/2024,False
+249,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/20/2024,False
+250,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/21/2024,False
+251,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/22/2024,False
+252,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/23/2024,False
+253,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/24/2024,False
+254,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/25/2024,False
+255,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/26/2024,False
+256,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/27/2024,False
+257,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/28/2024,False
+258,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/29/2024,False
+259,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/30/2024,False
+260,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,12/31/2024,False
+261,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/01/2025,False
+262,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/02/2025,False
+263,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/03/2025,False
+264,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/04/2025,False
+265,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/05/2025,False
+266,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/06/2025,False
+267,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/07/2025,False
+268,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/08/2025,False
+269,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/09/2025,False
+270,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/10/2025,False
+271,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/11/2025,False
+272,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/12/2025,False
+273,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/13/2025,False
+274,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/14/2025,False
+275,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/15/2025,False
+276,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/16/2025,False
+277,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/17/2025,False
+278,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/18/2025,False
+279,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/19/2025,False
+280,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/20/2025,False
+281,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/21/2025,False
+282,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/22/2025,False
+283,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/23/2025,False
+284,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/24/2025,False
+285,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/25/2025,False
+286,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/26/2025,False
+287,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/27/2025,False
+288,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/28/2025,False
+289,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/29/2025,False
+290,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/30/2025,False
+291,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,01/31/2025,False
+292,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/01/2025,False
+293,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/02/2025,False
+294,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/03/2025,False
+295,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/04/2025,False
+296,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/05/2025,False
+297,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/06/2025,False
+298,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/07/2025,False
+299,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/08/2025,False
+300,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/09/2025,False
+301,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/10/2025,False
+302,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/11/2025,False
+303,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/12/2025,False
+304,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/13/2025,False
+305,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/14/2025,False
+306,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/15/2025,False
+307,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/16/2025,False
+308,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/17/2025,False
+309,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/18/2025,False
+310,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/19/2025,False
+311,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/20/2025,False
+312,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/21/2025,False
+313,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/22/2025,False
+314,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/23/2025,False
+315,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/24/2025,False
+316,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/25/2025,False
+317,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/26/2025,False
+318,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/27/2025,False
+319,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,02/28/2025,False
+320,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/01/2025,False
+321,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/02/2025,False
+322,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/03/2025,False
+323,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/04/2025,False
+324,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/05/2025,False
+325,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/06/2025,False
+326,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/07/2025,False
+327,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/08/2025,False
+328,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/09/2025,False
+329,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/10/2025,False
+330,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/11/2025,False
+331,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/12/2025,False
+332,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/13/2025,False
+333,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1325,03/14/2025,False
+334,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/15/2025,False
+335,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/16/2025,False
+336,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/17/2025,False
+337,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/18/2025,False
+338,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/19/2025,False
+339,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/20/2025,False
+340,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/21/2025,False
+341,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/22/2025,False
+342,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/23/2025,False
+343,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/24/2025,False
+344,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/25/2025,False
+345,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/26/2025,False
+346,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/27/2025,False
+347,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/28/2025,False
+348,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/29/2025,False
+349,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/30/2025,False
+350,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,03/31/2025,False
+351,Nirvana Breckenridge,2 BR 2 BA Platinum,2x2,1040,1350,04/01/2025,True
+352,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,09/24/2024,False
+353,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,09/25/2024,False
+354,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,09/26/2024,False
+355,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,09/27/2024,False
+356,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,09/28/2024,False
+357,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,09/29/2024,False
+358,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,09/30/2024,False
+359,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/01/2024,False
+360,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/02/2024,False
+361,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/03/2024,False
+362,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/04/2024,False
+363,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/05/2024,False
+364,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/06/2024,False
+365,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/07/2024,False
+366,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/08/2024,False
+367,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/09/2024,False
+368,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/10/2024,False
+369,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/11/2024,False
+370,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/12/2024,False
+371,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/13/2024,False
+372,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/14/2024,False
+373,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/15/2024,False
+374,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/16/2024,False
+375,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/17/2024,False
+376,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/18/2024,False
+377,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/19/2024,False
+378,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/20/2024,False
+379,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/21/2024,False
+380,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/22/2024,False
+381,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/23/2024,False
+382,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/24/2024,False
+383,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/25/2024,False
+384,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/26/2024,False
+385,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/27/2024,False
+386,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/28/2024,False
+387,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/29/2024,False
+388,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/30/2024,False
+389,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,10/31/2024,False
+390,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/01/2024,False
+391,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/02/2024,False
+392,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/03/2024,False
+393,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/04/2024,False
+394,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/05/2024,False
+395,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/06/2024,False
+396,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/07/2024,False
+397,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/08/2024,False
+398,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/09/2024,False
+399,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/10/2024,False
+400,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/11/2024,False
+401,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/12/2024,False
+402,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/13/2024,False
+403,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/14/2024,False
+404,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/15/2024,False
+405,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/16/2024,False
+406,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/17/2024,False
+407,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/18/2024,False
+408,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/19/2024,False
+409,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/20/2024,False
+410,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/21/2024,False
+411,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/22/2024,False
+412,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/23/2024,False
+413,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/24/2024,False
+414,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/25/2024,False
+415,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/26/2024,False
+416,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/27/2024,False
+417,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/28/2024,False
+418,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/29/2024,False
+419,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1425,11/30/2024,True
+420,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/15/2025,False
+421,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/16/2025,False
+422,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/17/2025,False
+423,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/18/2025,False
+424,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/19/2025,False
+425,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/20/2025,False
+426,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/21/2025,False
+427,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/22/2025,False
+428,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/23/2025,False
+429,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/24/2025,False
+430,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/25/2025,False
+431,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/26/2025,False
+432,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/27/2025,False
+433,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/28/2025,False
+434,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/29/2025,False
+435,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/30/2025,False
+436,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,03/31/2025,False
+437,Nirvana Breckenridge,3 BR 15 BA Platinum,3x1.5,1240,1550,04/01/2025,True
+438,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/15/2025,False
+439,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/16/2025,False
+440,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/17/2025,False
+441,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/18/2025,False
+442,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/19/2025,False
+443,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/20/2025,False
+444,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/21/2025,False
+445,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/22/2025,False
+446,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/23/2025,False
+447,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/24/2025,False
+448,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/25/2025,False
+449,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/26/2025,False
+450,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/27/2025,False
+451,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/28/2025,False
+452,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/29/2025,False
+453,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/30/2025,False
+454,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,03/31/2025,False
+455,Nirvana Breckenridge,3 BR 2 BA Platinum,3x1.5,1240,1550,04/01/2025,True
+456,Nirvana Breckenridge,B-10,2x2,1040,1225,10/22/2023,False
+457,Nirvana Breckenridge,B-10,2x2,1040,1225,10/23/2023,False
+458,Nirvana Breckenridge,B-10,2x2,1040,1225,10/24/2023,False
+459,Nirvana Breckenridge,B-10,2x2,1040,1225,10/25/2023,False
+460,Nirvana Breckenridge,B-10,2x2,1040,1225,10/26/2023,False
+461,Nirvana Breckenridge,B-10,2x2,1040,1225,10/27/2023,False
+462,Nirvana Breckenridge,B-10,2x2,1040,1225,10/28/2023,False
+463,Nirvana Breckenridge,B-10,2x2,1040,1225,10/29/2023,False
+464,Nirvana Breckenridge,B-10,2x2,1040,1225,10/30/2023,False
+465,Nirvana Breckenridge,B-10,2x2,1040,1225,10/31/2023,False
+466,Nirvana Breckenridge,B-10,2x2,1040,1225,11/01/2023,False
+467,Nirvana Breckenridge,B-10,2x2,1040,1225,11/02/2023,False
+468,Nirvana Breckenridge,B-10,2x2,1040,1225,11/03/2023,False
+469,Nirvana Breckenridge,B-10,2x2,1040,1225,11/04/2023,False
+470,Nirvana Breckenridge,B-10,2x2,1040,1225,11/05/2023,False
+471,Nirvana Breckenridge,B-10,2x2,1040,1225,11/06/2023,False
+472,Nirvana Breckenridge,B-10,2x2,1040,1225,11/07/2023,False
+473,Nirvana Breckenridge,B-10,2x2,1040,1225,11/08/2023,False
+474,Nirvana Breckenridge,B-10,2x2,1040,1225,11/09/2023,False
+475,Nirvana Breckenridge,B-10,2x2,1040,1225,11/10/2023,False
+476,Nirvana Breckenridge,B-10,2x2,1040,1225,11/11/2023,False
+477,Nirvana Breckenridge,B-10,2x2,1040,1225,11/12/2023,False
+478,Nirvana Breckenridge,B-10,2x2,1040,1225,11/13/2023,False
+479,Nirvana Breckenridge,B-10,2x2,1040,1225,11/14/2023,False
+480,Nirvana Breckenridge,B-10,2x2,1040,1225,11/15/2023,False
+481,Nirvana Breckenridge,B-10,2x2,1040,1225,11/16/2023,False
+482,Nirvana Breckenridge,B-10,2x2,1040,1225,11/17/2023,False
+483,Nirvana Breckenridge,B-10,2x2,1040,1225,11/18/2023,True
+484,Nirvana Breckenridge,B-16,2x2,1040,1225,10/22/2023,False
+485,Nirvana Breckenridge,B-16,2x2,1040,1225,10/23/2023,False
+486,Nirvana Breckenridge,B-16,2x2,1040,1225,10/24/2023,False
+487,Nirvana Breckenridge,B-16,2x2,1040,1225,10/25/2023,False
+488,Nirvana Breckenridge,B-16,2x2,1040,1225,10/26/2023,False
+489,Nirvana Breckenridge,B-16,2x2,1040,1225,10/27/2023,False
+490,Nirvana Breckenridge,B-16,2x2,1040,1225,10/28/2023,False
+491,Nirvana Breckenridge,B-16,2x2,1040,1225,10/29/2023,False
+492,Nirvana Breckenridge,B-16,2x2,1040,1225,10/30/2023,False
+493,Nirvana Breckenridge,B-16,2x2,1040,1225,10/31/2023,False
+494,Nirvana Breckenridge,B-16,2x2,1040,1225,11/01/2023,False
+495,Nirvana Breckenridge,B-16,2x2,1040,1225,11/02/2023,False
+496,Nirvana Breckenridge,B-16,2x2,1040,1225,11/03/2023,False
+497,Nirvana Breckenridge,B-16,2x2,1040,1225,11/04/2023,True
+498,Nirvana Breckenridge,C-04,2x2,1040,1225,10/22/2023,False
+499,Nirvana Breckenridge,C-04,2x2,1040,1225,10/23/2023,False
+500,Nirvana Breckenridge,C-04,2x2,1040,1225,10/24/2023,False
+501,Nirvana Breckenridge,C-04,2x2,1040,1225,10/25/2023,False
+502,Nirvana Breckenridge,C-04,2x2,1040,1225,10/26/2023,False
+503,Nirvana Breckenridge,C-04,2x2,1040,1225,10/27/2023,False
+504,Nirvana Breckenridge,C-04,2x2,1040,1225,10/28/2023,False
+505,Nirvana Breckenridge,C-04,2x2,1040,1225,10/29/2023,False
+506,Nirvana Breckenridge,C-04,2x2,1040,1225,10/30/2023,False
+507,Nirvana Breckenridge,C-04,2x2,1040,1225,10/31/2023,False
+508,Nirvana Breckenridge,C-04,2x2,1040,1225,11/01/2023,False
+509,Nirvana Breckenridge,C-04,2x2,1040,1225,11/02/2023,False
+510,Nirvana Breckenridge,C-04,2x2,1040,1225,11/03/2023,False
+511,Nirvana Breckenridge,C-04,2x2,1040,1225,11/04/2023,False
+512,Nirvana Breckenridge,C-04,2x2,1040,1225,11/05/2023,False
+513,Nirvana Breckenridge,C-04,2x2,1040,1225,11/06/2023,False
+514,Nirvana Breckenridge,C-04,2x2,1040,1225,11/07/2023,False
+515,Nirvana Breckenridge,C-04,2x2,1040,1225,11/08/2023,False
+516,Nirvana Breckenridge,C-04,2x2,1040,1225,11/09/2023,False
+517,Nirvana Breckenridge,C-04,2x2,1040,1225,11/10/2023,False
+518,Nirvana Breckenridge,C-04,2x2,1040,1225,11/11/2023,False
+519,Nirvana Breckenridge,C-04,2x2,1040,1225,11/12/2023,False
+520,Nirvana Breckenridge,C-04,2x2,1040,1225,11/13/2023,False
+521,Nirvana Breckenridge,C-04,2x2,1040,1225,11/14/2023,False
+522,Nirvana Breckenridge,C-04,2x2,1040,1225,11/15/2023,False
+523,Nirvana Breckenridge,C-04,2x2,1040,1225,11/16/2023,False
+524,Nirvana Breckenridge,C-04,2x2,1040,1225,11/17/2023,False
+525,Nirvana Breckenridge,C-04,2x2,1040,1225,11/18/2023,False
+526,Nirvana Breckenridge,C-04,2x2,1040,1225,11/19/2023,False
+527,Nirvana Breckenridge,C-04,2x2,1040,1225,11/20/2023,False
+528,Nirvana Breckenridge,C-04,2x2,1040,1225,11/21/2023,False
+529,Nirvana Breckenridge,C-04,2x2,1040,1225,11/22/2023,False
+530,Nirvana Breckenridge,C-04,2x2,1040,1225,11/23/2023,False
+531,Nirvana Breckenridge,C-04,2x2,1040,1225,11/24/2023,False
+532,Nirvana Breckenridge,C-04,2x2,1040,1225,11/25/2023,False
+533,Nirvana Breckenridge,C-04,2x2,1040,1225,11/26/2023,False
+534,Nirvana Breckenridge,C-04,2x2,1040,1225,11/27/2023,False
+535,Nirvana Breckenridge,C-04,2x2,1040,1225,11/28/2023,False
+536,Nirvana Breckenridge,C-04,2x2,1040,1225,11/29/2023,False
+537,Nirvana Breckenridge,C-04,2x2,1040,1225,11/30/2023,False
+538,Nirvana Breckenridge,C-04,2x2,1040,1225,12/01/2023,False
+539,Nirvana Breckenridge,C-04,2x2,1040,1225,12/02/2023,False
+540,Nirvana Breckenridge,C-04,2x2,1040,1225,12/03/2023,False
+541,Nirvana Breckenridge,C-04,2x2,1040,1225,12/04/2023,False
+542,Nirvana Breckenridge,C-04,2x2,1040,1225,12/05/2023,False
+543,Nirvana Breckenridge,C-04,2x2,1040,1225,12/06/2023,False
+544,Nirvana Breckenridge,C-04,2x2,1040,1225,12/07/2023,False
+545,Nirvana Breckenridge,C-04,2x2,1040,1225,12/08/2023,False
+546,Nirvana Breckenridge,C-04,2x2,1040,1225,12/09/2023,False
+547,Nirvana Breckenridge,C-04,2x2,1040,1225,12/10/2023,False
+548,Nirvana Breckenridge,C-04,2x2,1040,1225,12/11/2023,False
+549,Nirvana Breckenridge,C-04,2x2,1040,1225,12/12/2023,False
+550,Nirvana Breckenridge,C-04,2x2,1040,1225,12/13/2023,False
+551,Nirvana Breckenridge,C-04,2x2,1040,1225,12/14/2023,False
+552,Nirvana Breckenridge,C-04,2x2,1040,1225,12/15/2023,False
+553,Nirvana Breckenridge,C-04,2x2,1040,1225,12/16/2023,False
+554,Nirvana Breckenridge,C-04,2x2,1040,1225,12/17/2023,False
+555,Nirvana Breckenridge,C-04,2x2,1040,1225,12/18/2023,False
+556,Nirvana Breckenridge,C-04,2x2,1040,1225,12/19/2023,False
+557,Nirvana Breckenridge,C-04,2x2,1040,1225,12/20/2023,False
+558,Nirvana Breckenridge,C-04,2x2,1040,1225,12/21/2023,False
+559,Nirvana Breckenridge,C-04,2x2,1040,1225,12/22/2023,False
+560,Nirvana Breckenridge,C-04,2x2,1040,1225,12/23/2023,False
+561,Nirvana Breckenridge,C-04,2x2,1040,1225,12/24/2023,False
+562,Nirvana Breckenridge,C-04,2x2,1040,1225,12/25/2023,False
+563,Nirvana Breckenridge,C-04,2x2,1040,1225,12/26/2023,False
+564,Nirvana Breckenridge,C-04,2x2,1040,1225,12/27/2023,False
+565,Nirvana Breckenridge,C-04,2x2,1040,1225,12/28/2023,False
+566,Nirvana Breckenridge,C-04,2x2,1040,1225,12/29/2023,False
+567,Nirvana Breckenridge,C-04,2x2,1040,1225,12/30/2023,False
+568,Nirvana Breckenridge,C-04,2x2,1040,1225,12/31/2023,False
+569,Nirvana Breckenridge,C-04,2x2,1040,1225,01/01/2024,False
+570,Nirvana Breckenridge,C-04,2x2,1040,1225,01/02/2024,False
+571,Nirvana Breckenridge,C-04,2x2,1040,1225,01/03/2024,True
+572,Nirvana Breckenridge,C-11,2x1,1040,1225,10/22/2023,False
+573,Nirvana Breckenridge,C-11,2x1,1040,1225,10/23/2023,False
+574,Nirvana Breckenridge,C-11,2x1,1040,1225,10/24/2023,False
+575,Nirvana Breckenridge,C-11,2x1,1040,1225,10/25/2023,False
+576,Nirvana Breckenridge,C-11,2x1,1040,1225,10/26/2023,False
+577,Nirvana Breckenridge,C-11,2x1,1040,1225,10/27/2023,False
+578,Nirvana Breckenridge,C-11,2x1,1040,1225,10/28/2023,False
+579,Nirvana Breckenridge,C-11,2x1,1040,1225,10/29/2023,False
+580,Nirvana Breckenridge,C-11,2x1,1040,1225,10/30/2023,False
+581,Nirvana Breckenridge,C-11,2x1,1040,1225,10/31/2023,False
+582,Nirvana Breckenridge,C-11,2x1,1040,1225,11/01/2023,False
+583,Nirvana Breckenridge,C-11,2x1,1040,1225,11/02/2023,False
+584,Nirvana Breckenridge,C-11,2x1,1040,1225,11/03/2023,False
+585,Nirvana Breckenridge,C-11,2x1,1040,1225,11/04/2023,False
+586,Nirvana Breckenridge,C-11,2x1,1040,1225,11/05/2023,False
+587,Nirvana Breckenridge,C-11,2x1,1040,1225,11/06/2023,False
+588,Nirvana Breckenridge,C-11,2x1,1040,1225,11/07/2023,False
+589,Nirvana Breckenridge,C-11,2x1,1040,1225,11/08/2023,False
+590,Nirvana Breckenridge,C-11,2x1,1040,1225,11/09/2023,False
+591,Nirvana Breckenridge,C-11,2x1,1040,1225,11/10/2023,False
+592,Nirvana Breckenridge,C-11,2x1,1040,1225,11/11/2023,False
+593,Nirvana Breckenridge,C-11,2x1,1040,1225,11/12/2023,False
+594,Nirvana Breckenridge,C-11,2x1,1040,1225,11/13/2023,False
+595,Nirvana Breckenridge,C-11,2x1,1040,1225,11/14/2023,False
+596,Nirvana Breckenridge,C-11,2x1,1040,1225,11/15/2023,False
+597,Nirvana Breckenridge,C-11,2x1,1040,1225,11/16/2023,False
+598,Nirvana Breckenridge,C-11,2x1,1040,1225,11/17/2023,False
+599,Nirvana Breckenridge,C-11,2x1,1040,1225,11/18/2023,False
+600,Nirvana Breckenridge,C-11,2x1,1040,1225,11/19/2023,False
+601,Nirvana Breckenridge,C-11,2x1,1040,1225,11/20/2023,False
+602,Nirvana Breckenridge,C-11,2x1,1040,1225,11/21/2023,False
+603,Nirvana Breckenridge,C-11,2x1,1040,1225,11/22/2023,False
+604,Nirvana Breckenridge,C-11,2x1,1040,1225,11/23/2023,False
+605,Nirvana Breckenridge,C-11,2x1,1040,1225,11/24/2023,False
+606,Nirvana Breckenridge,C-11,2x1,1040,1225,11/25/2023,False
+607,Nirvana Breckenridge,C-11,2x1,1040,1225,11/26/2023,False
+608,Nirvana Breckenridge,C-11,2x1,1040,1225,11/27/2023,False
+609,Nirvana Breckenridge,C-11,2x1,1040,1225,11/28/2023,False
+610,Nirvana Breckenridge,C-11,2x1,1040,1225,11/29/2023,False
+611,Nirvana Breckenridge,C-11,2x1,1040,1225,11/30/2023,False
+612,Nirvana Breckenridge,C-11,2x1,1040,1225,12/01/2023,False
+613,Nirvana Breckenridge,C-11,2x1,1040,1225,12/02/2023,False
+614,Nirvana Breckenridge,C-11,2x1,1040,1225,12/03/2023,False
+615,Nirvana Breckenridge,C-11,2x1,1040,1225,12/04/2023,False
+616,Nirvana Breckenridge,C-11,2x1,1040,1225,12/05/2023,True
+617,Nirvana Breckenridge,C-14,2x2,1040,1225,10/22/2023,False
+618,Nirvana Breckenridge,C-14,2x2,1040,1225,10/23/2023,False
+619,Nirvana Breckenridge,C-14,2x2,1040,1225,10/24/2023,False
+620,Nirvana Breckenridge,C-14,2x2,1040,1225,10/25/2023,False
+621,Nirvana Breckenridge,C-14,2x2,1040,1225,10/26/2023,False
+622,Nirvana Breckenridge,C-14,2x2,1040,1225,10/27/2023,False
+623,Nirvana Breckenridge,C-14,2x2,1040,1225,10/28/2023,False
+624,Nirvana Breckenridge,C-14,2x2,1040,1225,10/29/2023,False
+625,Nirvana Breckenridge,C-14,2x2,1040,1225,10/30/2023,False
+626,Nirvana Breckenridge,C-14,2x2,1040,1225,10/31/2023,False
+627,Nirvana Breckenridge,C-14,2x2,1040,1225,11/01/2023,False
+628,Nirvana Breckenridge,C-14,2x2,1040,1225,11/02/2023,False
+629,Nirvana Breckenridge,C-14,2x2,1040,1225,11/03/2023,False
+630,Nirvana Breckenridge,C-14,2x2,1040,1225,11/04/2023,False
+631,Nirvana Breckenridge,C-14,2x2,1040,1225,11/05/2023,False
+632,Nirvana Breckenridge,C-14,2x2,1040,1225,11/06/2023,False
+633,Nirvana Breckenridge,C-14,2x2,1040,1225,11/07/2023,False
+634,Nirvana Breckenridge,C-14,2x2,1040,1225,11/08/2023,False
+635,Nirvana Breckenridge,C-14,2x2,1040,1225,11/09/2023,False
+636,Nirvana Breckenridge,C-14,2x2,1040,1225,11/10/2023,False
+637,Nirvana Breckenridge,C-14,2x2,1040,1225,11/11/2023,False
+638,Nirvana Breckenridge,C-14,2x2,1040,1225,11/12/2023,False
+639,Nirvana Breckenridge,C-14,2x2,1040,1225,11/13/2023,False
+640,Nirvana Breckenridge,C-14,2x2,1040,1225,11/14/2023,False
+641,Nirvana Breckenridge,C-14,2x2,1040,1225,11/15/2023,False
+642,Nirvana Breckenridge,C-14,2x2,1040,1225,11/16/2023,False
+643,Nirvana Breckenridge,C-14,2x2,1040,1225,11/17/2023,False
+644,Nirvana Breckenridge,C-14,2x2,1040,1225,11/18/2023,False
+645,Nirvana Breckenridge,C-14,2x2,1040,1225,11/19/2023,False
+646,Nirvana Breckenridge,C-14,2x2,1040,1225,11/20/2023,False
+647,Nirvana Breckenridge,C-14,2x2,1040,1225,11/21/2023,False
+648,Nirvana Breckenridge,C-14,2x2,1040,1225,11/22/2023,False
+649,Nirvana Breckenridge,C-14,2x2,1040,1225,11/23/2023,False
+650,Nirvana Breckenridge,C-14,2x2,1040,1225,11/24/2023,False
+651,Nirvana Breckenridge,C-14,2x2,1040,1225,11/25/2023,False
+652,Nirvana Breckenridge,C-14,2x2,1040,1225,11/26/2023,False
+653,Nirvana Breckenridge,C-14,2x2,1040,1225,11/27/2023,False
+654,Nirvana Breckenridge,C-14,2x2,1040,1225,11/28/2023,False
+655,Nirvana Breckenridge,C-14,2x2,1040,1225,11/29/2023,False
+656,Nirvana Breckenridge,C-14,2x2,1040,1225,11/30/2023,False
+657,Nirvana Breckenridge,C-14,2x2,1040,1225,12/01/2023,False
+658,Nirvana Breckenridge,C-14,2x2,1040,1225,12/02/2023,False
+659,Nirvana Breckenridge,C-14,2x2,1040,1225,12/03/2023,False
+660,Nirvana Breckenridge,C-14,2x2,1040,1225,12/04/2023,False
+661,Nirvana Breckenridge,C-14,2x2,1040,1225,12/05/2023,False
+662,Nirvana Breckenridge,C-14,2x2,1040,1225,12/06/2023,False
+663,Nirvana Breckenridge,C-14,2x2,1040,1225,12/07/2023,False
+664,Nirvana Breckenridge,C-14,2x2,1040,1225,12/08/2023,False
+665,Nirvana Breckenridge,C-14,2x2,1040,1225,12/09/2023,False
+666,Nirvana Breckenridge,C-14,2x2,1040,1225,12/10/2023,False
+667,Nirvana Breckenridge,C-14,2x2,1040,1225,12/11/2023,False
+668,Nirvana Breckenridge,C-14,2x2,1040,1225,12/12/2023,False
+669,Nirvana Breckenridge,C-14,2x2,1040,1225,12/13/2023,False
+670,Nirvana Breckenridge,C-14,2x2,1040,1225,12/14/2023,False
+671,Nirvana Breckenridge,C-14,2x2,1040,1225,12/15/2023,False
+672,Nirvana Breckenridge,C-14,2x2,1040,1225,12/16/2023,False
+673,Nirvana Breckenridge,C-14,2x2,1040,1225,12/17/2023,False
+674,Nirvana Breckenridge,C-14,2x2,1040,1225,12/18/2023,False
+675,Nirvana Breckenridge,C-14,2x2,1040,1225,12/19/2023,False
+676,Nirvana Breckenridge,C-14,2x2,1040,1225,12/20/2023,False
+677,Nirvana Breckenridge,C-14,2x2,1040,1225,12/21/2023,False
+678,Nirvana Breckenridge,C-14,2x2,1040,1225,12/22/2023,False
+679,Nirvana Breckenridge,C-14,2x2,1040,1225,12/23/2023,False
+680,Nirvana Breckenridge,C-14,2x2,1040,1225,12/24/2023,False
+681,Nirvana Breckenridge,C-14,2x2,1040,1225,12/25/2023,False
+682,Nirvana Breckenridge,C-14,2x2,1040,1225,12/26/2023,False
+683,Nirvana Breckenridge,C-14,2x2,1040,1225,12/27/2023,False
+684,Nirvana Breckenridge,C-14,2x2,1040,1225,12/28/2023,False
+685,Nirvana Breckenridge,C-14,2x2,1040,1225,12/29/2023,False
+686,Nirvana Breckenridge,C-14,2x2,1040,1225,12/30/2023,False
+687,Nirvana Breckenridge,C-14,2x2,1040,1225,12/31/2023,False
+688,Nirvana Breckenridge,C-14,2x2,1040,1225,01/01/2024,False
+689,Nirvana Breckenridge,C-14,2x2,1040,1225,01/02/2024,False
+690,Nirvana Breckenridge,C-14,2x2,1040,1225,01/03/2024,False
+691,Nirvana Breckenridge,C-14,2x2,1040,1225,01/04/2024,False
+692,Nirvana Breckenridge,C-14,2x2,1040,1225,01/05/2024,False
+693,Nirvana Breckenridge,C-14,2x2,1040,1225,01/06/2024,False
+694,Nirvana Breckenridge,C-14,2x2,1040,1225,01/07/2024,False
+695,Nirvana Breckenridge,C-14,2x2,1040,1225,01/08/2024,False
+696,Nirvana Breckenridge,C-14,2x2,1040,1225,01/09/2024,False
+697,Nirvana Breckenridge,C-14,2x2,1040,1225,01/10/2024,False
+698,Nirvana Breckenridge,C-14,2x2,1040,1225,01/11/2024,False
+699,Nirvana Breckenridge,C-14,2x2,1040,1225,01/12/2024,False
+700,Nirvana Breckenridge,C-14,2x2,1040,1225,01/13/2024,False
+701,Nirvana Breckenridge,C-14,2x2,1040,1225,01/14/2024,False
+702,Nirvana Breckenridge,C-14,2x2,1040,1225,01/15/2024,False
+703,Nirvana Breckenridge,C-14,2x2,1040,1225,01/16/2024,False
+704,Nirvana Breckenridge,C-14,2x2,1040,1225,01/17/2024,False
+705,Nirvana Breckenridge,C-14,2x2,1040,1225,01/18/2024,False
+706,Nirvana Breckenridge,C-14,2x2,1040,1225,01/19/2024,False
+707,Nirvana Breckenridge,C-14,2x2,1040,1225,01/20/2024,False
+708,Nirvana Breckenridge,C-14,2x2,1040,1225,01/21/2024,False
+709,Nirvana Breckenridge,C-14,2x2,1040,1225,01/22/2024,False
+710,Nirvana Breckenridge,C-14,2x2,1040,1225,01/23/2024,False
+711,Nirvana Breckenridge,C-14,2x2,1040,1225,01/24/2024,False
+712,Nirvana Breckenridge,C-14,2x2,1040,1225,01/25/2024,False
+713,Nirvana Breckenridge,C-14,2x2,1040,1225,01/26/2024,False
+714,Nirvana Breckenridge,C-14,2x2,1040,1225,01/27/2024,False
+715,Nirvana Breckenridge,C-14,2x2,1040,1225,01/28/2024,False
+716,Nirvana Breckenridge,C-14,2x2,1040,1225,01/29/2024,False
+717,Nirvana Breckenridge,C-14,2x2,1040,1225,01/30/2024,False
+718,Nirvana Breckenridge,C-14,2x2,1040,1225,01/31/2024,False
+719,Nirvana Breckenridge,C-14,2x2,1040,1225,02/01/2024,False
+720,Nirvana Breckenridge,C-14,2x2,1040,1325,02/02/2024,False
+721,Nirvana Breckenridge,C-14,2x2,1040,1325,02/03/2024,False
+722,Nirvana Breckenridge,C-14,2x2,1040,1325,02/04/2024,False
+723,Nirvana Breckenridge,C-14,2x2,1040,1325,02/05/2024,False
+724,Nirvana Breckenridge,C-14,2x2,1040,1325,02/06/2024,False
+725,Nirvana Breckenridge,C-14,2x2,1040,1325,02/07/2024,True
+726,Nirvana Breckenridge,D-02,2x2,1040,1225,10/22/2023,False
+727,Nirvana Breckenridge,D-02,2x2,1040,1225,10/23/2023,False
+728,Nirvana Breckenridge,D-02,2x2,1040,1225,10/24/2023,False
+729,Nirvana Breckenridge,D-02,2x2,1040,1225,10/25/2023,False
+730,Nirvana Breckenridge,D-02,2x2,1040,1225,10/26/2023,False
+731,Nirvana Breckenridge,D-02,2x2,1040,1225,10/27/2023,False
+732,Nirvana Breckenridge,D-02,2x2,1040,1225,10/28/2023,False
+733,Nirvana Breckenridge,D-02,2x2,1040,1225,10/29/2023,False
+734,Nirvana Breckenridge,D-02,2x2,1040,1225,10/30/2023,False
+735,Nirvana Breckenridge,D-02,2x2,1040,1225,10/31/2023,False
+736,Nirvana Breckenridge,D-02,2x2,1040,1225,11/01/2023,False
+737,Nirvana Breckenridge,D-02,2x2,1040,1225,11/02/2023,False
+738,Nirvana Breckenridge,D-02,2x2,1040,1225,11/03/2023,False
+739,Nirvana Breckenridge,D-02,2x2,1040,1225,11/04/2023,False
+740,Nirvana Breckenridge,D-02,2x2,1040,1225,11/05/2023,False
+741,Nirvana Breckenridge,D-02,2x2,1040,1225,11/06/2023,False
+742,Nirvana Breckenridge,D-02,2x2,1040,1225,11/07/2023,False
+743,Nirvana Breckenridge,D-02,2x2,1040,1225,11/08/2023,False
+744,Nirvana Breckenridge,D-02,2x2,1040,1225,11/09/2023,False
+745,Nirvana Breckenridge,D-02,2x2,1040,1225,11/10/2023,False
+746,Nirvana Breckenridge,D-02,2x2,1040,1225,11/11/2023,False
+747,Nirvana Breckenridge,D-02,2x2,1040,1225,11/12/2023,False
+748,Nirvana Breckenridge,D-02,2x2,1040,1225,11/13/2023,False
+749,Nirvana Breckenridge,D-02,2x2,1040,1225,11/14/2023,False
+750,Nirvana Breckenridge,D-02,2x2,1040,1225,11/15/2023,False
+751,Nirvana Breckenridge,D-02,2x2,1040,1225,11/16/2023,False
+752,Nirvana Breckenridge,D-02,2x2,1040,1225,11/17/2023,False
+753,Nirvana Breckenridge,D-02,2x2,1040,1225,11/18/2023,False
+754,Nirvana Breckenridge,D-02,2x2,1040,1225,11/19/2023,False
+755,Nirvana Breckenridge,D-02,2x2,1040,1225,11/20/2023,False
+756,Nirvana Breckenridge,D-02,2x2,1040,1225,11/21/2023,False
+757,Nirvana Breckenridge,D-02,2x2,1040,1225,11/22/2023,False
+758,Nirvana Breckenridge,D-02,2x2,1040,1225,11/23/2023,False
+759,Nirvana Breckenridge,D-02,2x2,1040,1225,11/24/2023,False
+760,Nirvana Breckenridge,D-02,2x2,1040,1225,11/25/2023,False
+761,Nirvana Breckenridge,D-02,2x2,1040,1225,11/26/2023,False
+762,Nirvana Breckenridge,D-02,2x2,1040,1225,11/27/2023,False
+763,Nirvana Breckenridge,D-02,2x2,1040,1225,11/28/2023,False
+764,Nirvana Breckenridge,D-02,2x2,1040,1225,11/29/2023,False
+765,Nirvana Breckenridge,D-02,2x2,1040,1225,11/30/2023,False
+766,Nirvana Breckenridge,D-02,2x2,1040,1225,12/01/2023,False
+767,Nirvana Breckenridge,D-02,2x2,1040,1225,12/02/2023,False
+768,Nirvana Breckenridge,D-02,2x2,1040,1225,12/03/2023,False
+769,Nirvana Breckenridge,D-02,2x2,1040,1225,12/04/2023,False
+770,Nirvana Breckenridge,D-02,2x2,1040,1225,12/05/2023,False
+771,Nirvana Breckenridge,D-02,2x2,1040,1225,12/06/2023,False
+772,Nirvana Breckenridge,D-02,2x2,1040,1225,12/07/2023,True
+773,Nirvana Breckenridge,E-03,2x1,1040,1300,07/06/2023,False
+774,Nirvana Breckenridge,E-03,2x1,1040,1300,07/07/2023,False
+775,Nirvana Breckenridge,E-03,2x1,1040,1300,07/08/2023,False
+776,Nirvana Breckenridge,E-03,2x1,1040,1300,07/09/2023,False
+777,Nirvana Breckenridge,E-03,2x1,1040,1300,07/10/2023,False
+778,Nirvana Breckenridge,E-03,2x1,1040,1300,07/11/2023,False
+779,Nirvana Breckenridge,E-03,2x1,1040,1300,07/12/2023,False
+780,Nirvana Breckenridge,E-03,2x1,1040,1300,07/13/2023,False
+781,Nirvana Breckenridge,E-03,2x1,1040,1300,07/14/2023,False
+782,Nirvana Breckenridge,E-03,2x1,1040,1300,07/15/2023,False
+783,Nirvana Breckenridge,E-03,2x1,1040,1300,07/16/2023,False
+784,Nirvana Breckenridge,E-03,2x1,1040,1300,07/17/2023,False
+785,Nirvana Breckenridge,E-03,2x1,1040,1300,07/18/2023,False
+786,Nirvana Breckenridge,E-03,2x1,1040,1300,07/19/2023,False
+787,Nirvana Breckenridge,E-03,2x1,1040,1300,07/20/2023,False
+788,Nirvana Breckenridge,E-03,2x1,1040,1300,07/21/2023,True
+789,Nirvana Breckenridge,E-03,2x1,1040,1225,10/22/2023,False
+790,Nirvana Breckenridge,E-03,2x1,1040,1225,10/23/2023,False
+791,Nirvana Breckenridge,E-03,2x1,1040,1225,10/24/2023,False
+792,Nirvana Breckenridge,E-03,2x1,1040,1225,10/25/2023,False
+793,Nirvana Breckenridge,E-03,2x1,1040,1225,10/26/2023,False
+794,Nirvana Breckenridge,E-03,2x1,1040,1225,10/27/2023,False
+795,Nirvana Breckenridge,E-03,2x1,1040,1225,10/28/2023,False
+796,Nirvana Breckenridge,E-03,2x1,1040,1225,10/29/2023,False
+797,Nirvana Breckenridge,E-03,2x1,1040,1225,10/30/2023,False
+798,Nirvana Breckenridge,E-03,2x1,1040,1225,10/31/2023,False
+799,Nirvana Breckenridge,E-03,2x1,1040,1225,11/01/2023,False
+800,Nirvana Breckenridge,E-03,2x1,1040,1225,11/02/2023,False
+801,Nirvana Breckenridge,E-03,2x1,1040,1225,11/03/2023,False
+802,Nirvana Breckenridge,E-03,2x1,1040,1225,11/04/2023,True
+803,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/22/2023,False
+804,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/23/2023,False
+805,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/24/2023,False
+806,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/25/2023,False
+807,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/26/2023,False
+808,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/27/2023,False
+809,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/28/2023,False
+810,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/29/2023,False
+811,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/30/2023,False
+812,Nirvana Breckenridge,F-04,3x1.5,1240,1400,10/31/2023,False
+813,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/01/2023,False
+814,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/02/2023,False
+815,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/03/2023,False
+816,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/04/2023,False
+817,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/05/2023,False
+818,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/06/2023,False
+819,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/07/2023,False
+820,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/08/2023,False
+821,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/09/2023,False
+822,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/10/2023,False
+823,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/11/2023,False
+824,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/12/2023,False
+825,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/13/2023,False
+826,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/14/2023,False
+827,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/15/2023,False
+828,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/16/2023,False
+829,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/17/2023,False
+830,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/18/2023,False
+831,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/19/2023,False
+832,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/20/2023,False
+833,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/21/2023,False
+834,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/22/2023,False
+835,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/23/2023,False
+836,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/24/2023,False
+837,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/25/2023,False
+838,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/26/2023,False
+839,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/27/2023,False
+840,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/28/2023,False
+841,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/29/2023,False
+842,Nirvana Breckenridge,F-04,3x1.5,1240,1400,11/30/2023,False
+843,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/01/2023,False
+844,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/02/2023,False
+845,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/03/2023,False
+846,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/04/2023,False
+847,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/05/2023,False
+848,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/06/2023,False
+849,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/07/2023,False
+850,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/08/2023,False
+851,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/09/2023,False
+852,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/10/2023,False
+853,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/11/2023,False
+854,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/12/2023,False
+855,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/13/2023,False
+856,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/14/2023,False
+857,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/15/2023,False
+858,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/16/2023,False
+859,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/17/2023,False
+860,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/18/2023,False
+861,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/19/2023,False
+862,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/20/2023,False
+863,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/21/2023,False
+864,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/22/2023,False
+865,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/23/2023,False
+866,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/24/2023,False
+867,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/25/2023,False
+868,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/26/2023,False
+869,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/27/2023,False
+870,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/28/2023,False
+871,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/29/2023,False
+872,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/30/2023,False
+873,Nirvana Breckenridge,F-04,3x1.5,1240,1400,12/31/2023,False
+874,Nirvana Breckenridge,F-04,3x1.5,1240,1400,01/01/2024,False
+875,Nirvana Breckenridge,F-04,3x1.5,1240,1400,01/02/2024,False
+876,Nirvana Breckenridge,F-04,3x1.5,1240,1400,01/03/2024,False
+877,Nirvana Breckenridge,F-04,3x1.5,1240,1400,01/04/2024,False
+878,Nirvana Breckenridge,F-04,3x1.5,1240,1400,01/05/2024,False
+879,Nirvana Breckenridge,F-04,3x1.5,1240,1400,01/06/2024,False
+880,Nirvana Breckenridge,F-04,3x1.5,1240,1400,01/07/2024,True
+881,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/22/2023,False
+882,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/23/2023,False
+883,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/24/2023,False
+884,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/25/2023,False
+885,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/26/2023,False
+886,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/27/2023,False
+887,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/28/2023,False
+888,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/29/2023,False
+889,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/30/2023,False
+890,Nirvana Breckenridge,G-06,3x1.5,1240,1400,10/31/2023,False
+891,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/01/2023,False
+892,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/02/2023,False
+893,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/03/2023,False
+894,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/04/2023,False
+895,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/05/2023,False
+896,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/06/2023,False
+897,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/07/2023,False
+898,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/08/2023,False
+899,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/09/2023,False
+900,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/10/2023,False
+901,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/11/2023,False
+902,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/12/2023,False
+903,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/13/2023,False
+904,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/14/2023,False
+905,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/15/2023,False
+906,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/16/2023,False
+907,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/17/2023,False
+908,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/18/2023,False
+909,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/19/2023,False
+910,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/20/2023,False
+911,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/21/2023,False
+912,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/22/2023,False
+913,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/23/2023,False
+914,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/24/2023,False
+915,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/25/2023,False
+916,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/26/2023,False
+917,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/27/2023,False
+918,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/28/2023,False
+919,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/29/2023,False
+920,Nirvana Breckenridge,G-06,3x1.5,1240,1400,11/30/2023,False
+921,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/01/2023,False
+922,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/02/2023,False
+923,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/03/2023,False
+924,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/04/2023,False
+925,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/05/2023,False
+926,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/06/2023,False
+927,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/07/2023,False
+928,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/08/2023,False
+929,Nirvana Breckenridge,G-06,3x1.5,1240,1400,12/09/2023,True
+930,Nirvana Breckenridge,J-03,3x2,1240,1400,10/22/2023,False
+931,Nirvana Breckenridge,J-03,3x2,1240,1400,10/23/2023,False
+932,Nirvana Breckenridge,J-03,3x2,1240,1400,10/24/2023,False
+933,Nirvana Breckenridge,J-03,3x2,1240,1400,10/25/2023,False
+934,Nirvana Breckenridge,J-03,3x2,1240,1400,10/26/2023,False
+935,Nirvana Breckenridge,J-03,3x2,1240,1400,10/27/2023,False
+936,Nirvana Breckenridge,J-03,3x2,1240,1400,10/28/2023,False
+937,Nirvana Breckenridge,J-03,3x2,1240,1400,10/29/2023,False
+938,Nirvana Breckenridge,J-03,3x2,1240,1400,10/30/2023,False
+939,Nirvana Breckenridge,J-03,3x2,1240,1400,10/31/2023,False
+940,Nirvana Breckenridge,J-03,3x2,1240,1400,11/01/2023,False
+941,Nirvana Breckenridge,J-03,3x2,1240,1400,11/02/2023,False
+942,Nirvana Breckenridge,J-03,3x2,1240,1400,11/03/2023,False
+943,Nirvana Breckenridge,J-03,3x2,1240,1400,11/04/2023,False
+944,Nirvana Breckenridge,J-03,3x2,1240,1400,11/05/2023,False
+945,Nirvana Breckenridge,J-03,3x2,1240,1400,11/06/2023,False
+946,Nirvana Breckenridge,J-03,3x2,1240,1400,11/07/2023,False
+947,Nirvana Breckenridge,J-03,3x2,1240,1400,11/08/2023,False
+948,Nirvana Breckenridge,J-03,3x2,1240,1400,11/09/2023,False
+949,Nirvana Breckenridge,J-03,3x2,1240,1400,11/10/2023,False
+950,Nirvana Breckenridge,J-03,3x2,1240,1400,11/11/2023,False
+951,Nirvana Breckenridge,J-03,3x2,1240,1400,11/12/2023,False
+952,Nirvana Breckenridge,J-03,3x2,1240,1400,11/13/2023,False
+953,Nirvana Breckenridge,J-03,3x2,1240,1400,11/14/2023,False
+954,Nirvana Breckenridge,J-03,3x2,1240,1400,11/15/2023,False
+955,Nirvana Breckenridge,J-03,3x2,1240,1400,11/16/2023,False
+956,Nirvana Breckenridge,J-03,3x2,1240,1400,11/17/2023,False
+957,Nirvana Breckenridge,J-03,3x2,1240,1400,11/18/2023,False
+958,Nirvana Breckenridge,J-03,3x2,1240,1400,11/19/2023,False
+959,Nirvana Breckenridge,J-03,3x2,1240,1400,11/20/2023,False
+960,Nirvana Breckenridge,J-03,3x2,1240,1400,11/21/2023,False
+961,Nirvana Breckenridge,J-03,3x2,1240,1400,11/22/2023,False
+962,Nirvana Breckenridge,J-03,3x2,1240,1400,11/23/2023,False
+963,Nirvana Breckenridge,J-03,3x2,1240,1400,11/24/2023,False
+964,Nirvana Breckenridge,J-03,3x2,1240,1400,11/25/2023,False
+965,Nirvana Breckenridge,J-03,3x2,1240,1400,11/26/2023,False
+966,Nirvana Breckenridge,J-03,3x2,1240,1400,11/27/2023,False
+967,Nirvana Breckenridge,J-03,3x2,1240,1400,11/28/2023,False
+968,Nirvana Breckenridge,J-03,3x2,1240,1400,11/29/2023,False
+969,Nirvana Breckenridge,J-03,3x2,1240,1400,11/30/2023,False
+970,Nirvana Breckenridge,J-03,3x2,1240,1400,12/01/2023,False
+971,Nirvana Breckenridge,J-03,3x2,1240,1400,12/02/2023,False
+972,Nirvana Breckenridge,J-03,3x2,1240,1400,12/03/2023,False
+973,Nirvana Breckenridge,J-03,3x2,1240,1400,12/04/2023,False
+974,Nirvana Breckenridge,J-03,3x2,1240,1400,12/05/2023,False
+975,Nirvana Breckenridge,J-03,3x2,1240,1400,12/06/2023,False
+976,Nirvana Breckenridge,J-03,3x2,1240,1400,12/07/2023,False
+977,Nirvana Breckenridge,J-03,3x2,1240,1400,12/08/2023,False
+978,Nirvana Breckenridge,J-03,3x2,1240,1400,12/09/2023,False
+979,Nirvana Breckenridge,J-03,3x2,1240,1400,12/10/2023,False
+980,Nirvana Breckenridge,J-03,3x2,1240,1400,12/11/2023,False
+981,Nirvana Breckenridge,J-03,3x2,1240,1400,12/12/2023,False
+982,Nirvana Breckenridge,J-03,3x2,1240,1400,12/13/2023,False
+983,Nirvana Breckenridge,J-03,3x2,1240,1400,12/14/2023,False
+984,Nirvana Breckenridge,J-03,3x2,1240,1400,12/15/2023,False
+985,Nirvana Breckenridge,J-03,3x2,1240,1400,12/16/2023,False
+986,Nirvana Breckenridge,J-03,3x2,1240,1400,12/17/2023,False
+987,Nirvana Breckenridge,J-03,3x2,1240,1400,12/18/2023,False
+988,Nirvana Breckenridge,J-03,3x2,1240,1400,12/19/2023,False
+989,Nirvana Breckenridge,J-03,3x2,1240,1400,12/20/2023,False
+990,Nirvana Breckenridge,J-03,3x2,1240,1400,12/21/2023,False
+991,Nirvana Breckenridge,J-03,3x2,1240,1400,12/22/2023,False
+992,Nirvana Breckenridge,J-03,3x2,1240,1400,12/23/2023,False
+993,Nirvana Breckenridge,J-03,3x2,1240,1400,12/24/2023,False
+994,Nirvana Breckenridge,J-03,3x2,1240,1400,12/25/2023,False
+995,Nirvana Breckenridge,J-03,3x2,1240,1400,12/26/2023,False
+996,Nirvana Breckenridge,J-03,3x2,1240,1400,12/27/2023,False
+997,Nirvana Breckenridge,J-03,3x2,1240,1400,12/28/2023,False
+998,Nirvana Breckenridge,J-03,3x2,1240,1400,12/29/2023,False
+999,Nirvana Breckenridge,J-03,3x2,1240,1400,12/30/2023,False
+1000,Nirvana Breckenridge,J-03,3x2,1240,1400,12/31/2023,False
+1001,Nirvana Breckenridge,J-03,3x2,1240,1400,01/01/2024,False
+1002,Nirvana Breckenridge,J-03,3x2,1240,1400,01/02/2024,False
+1003,Nirvana Breckenridge,J-03,3x2,1240,1400,01/03/2024,False
+1004,Nirvana Breckenridge,J-03,3x2,1240,1400,01/04/2024,False
+1005,Nirvana Breckenridge,J-03,3x2,1240,1400,01/05/2024,False
+1006,Nirvana Breckenridge,J-03,3x2,1240,1400,01/06/2024,False
+1007,Nirvana Breckenridge,J-03,3x2,1240,1400,01/07/2024,True
+1008,Nirvana Breckenridge,J-05,3x2,1240,1400,10/22/2023,False
+1009,Nirvana Breckenridge,J-05,3x2,1240,1400,10/23/2023,False
+1010,Nirvana Breckenridge,J-05,3x2,1240,1400,10/24/2023,False
+1011,Nirvana Breckenridge,J-05,3x2,1240,1400,10/25/2023,False
+1012,Nirvana Breckenridge,J-05,3x2,1240,1400,10/26/2023,False
+1013,Nirvana Breckenridge,J-05,3x2,1240,1400,10/27/2023,False
+1014,Nirvana Breckenridge,J-05,3x2,1240,1400,10/28/2023,False
+1015,Nirvana Breckenridge,J-05,3x2,1240,1400,10/29/2023,False
+1016,Nirvana Breckenridge,J-05,3x2,1240,1400,10/30/2023,False
+1017,Nirvana Breckenridge,J-05,3x2,1240,1400,10/31/2023,False
+1018,Nirvana Breckenridge,J-05,3x2,1240,1400,11/01/2023,False
+1019,Nirvana Breckenridge,J-05,3x2,1240,1400,11/02/2023,False
+1020,Nirvana Breckenridge,J-05,3x2,1240,1400,11/03/2023,False
+1021,Nirvana Breckenridge,J-05,3x2,1240,1400,11/04/2023,False
+1022,Nirvana Breckenridge,J-05,3x2,1240,1400,11/05/2023,False
+1023,Nirvana Breckenridge,J-05,3x2,1240,1400,11/06/2023,False
+1024,Nirvana Breckenridge,J-05,3x2,1240,1400,11/07/2023,False
+1025,Nirvana Breckenridge,J-05,3x2,1240,1400,11/08/2023,False
+1026,Nirvana Breckenridge,J-05,3x2,1240,1400,11/09/2023,False
+1027,Nirvana Breckenridge,J-05,3x2,1240,1400,11/10/2023,False
+1028,Nirvana Breckenridge,J-05,3x2,1240,1400,11/11/2023,False
+1029,Nirvana Breckenridge,J-05,3x2,1240,1400,11/12/2023,False
+1030,Nirvana Breckenridge,J-05,3x2,1240,1400,11/13/2023,False
+1031,Nirvana Breckenridge,J-05,3x2,1240,1400,11/14/2023,False
+1032,Nirvana Breckenridge,J-05,3x2,1240,1400,11/15/2023,False
+1033,Nirvana Breckenridge,J-05,3x2,1240,1400,11/16/2023,False
+1034,Nirvana Breckenridge,J-05,3x2,1240,1400,11/17/2023,False
+1035,Nirvana Breckenridge,J-05,3x2,1240,1400,11/18/2023,False
+1036,Nirvana Breckenridge,J-05,3x2,1240,1400,11/19/2023,False
+1037,Nirvana Breckenridge,J-05,3x2,1240,1400,11/20/2023,False
+1038,Nirvana Breckenridge,J-05,3x2,1240,1400,11/21/2023,False
+1039,Nirvana Breckenridge,J-05,3x2,1240,1400,11/22/2023,False
+1040,Nirvana Breckenridge,J-05,3x2,1240,1400,11/23/2023,False
+1041,Nirvana Breckenridge,J-05,3x2,1240,1400,11/24/2023,False
+1042,Nirvana Breckenridge,J-05,3x2,1240,1400,11/25/2023,False
+1043,Nirvana Breckenridge,J-05,3x2,1240,1400,11/26/2023,False
+1044,Nirvana Breckenridge,J-05,3x2,1240,1400,11/27/2023,False
+1045,Nirvana Breckenridge,J-05,3x2,1240,1400,11/28/2023,False
+1046,Nirvana Breckenridge,J-05,3x2,1240,1400,11/29/2023,False
+1047,Nirvana Breckenridge,J-05,3x2,1240,1400,11/30/2023,False
+1048,Nirvana Breckenridge,J-05,3x2,1240,1400,12/01/2023,False
+1049,Nirvana Breckenridge,J-05,3x2,1240,1400,12/02/2023,False
+1050,Nirvana Breckenridge,J-05,3x2,1240,1400,12/03/2023,False
+1051,Nirvana Breckenridge,J-05,3x2,1240,1400,12/04/2023,False
+1052,Nirvana Breckenridge,J-05,3x2,1240,1400,12/05/2023,False
+1053,Nirvana Breckenridge,J-05,3x2,1240,1400,12/06/2023,False
+1054,Nirvana Breckenridge,J-05,3x2,1240,1400,12/07/2023,False
+1055,Nirvana Breckenridge,J-05,3x2,1240,1400,12/08/2023,False
+1056,Nirvana Breckenridge,J-05,3x2,1240,1400,12/09/2023,False
+1057,Nirvana Breckenridge,J-05,3x2,1240,1400,12/10/2023,False
+1058,Nirvana Breckenridge,J-05,3x2,1240,1400,12/11/2023,False
+1059,Nirvana Breckenridge,J-05,3x2,1240,1400,12/12/2023,False
+1060,Nirvana Breckenridge,J-05,3x2,1240,1400,12/13/2023,False
+1061,Nirvana Breckenridge,J-05,3x2,1240,1400,12/14/2023,False
+1062,Nirvana Breckenridge,J-05,3x2,1240,1400,12/15/2023,False
+1063,Nirvana Breckenridge,J-05,3x2,1240,1400,12/16/2023,False
+1064,Nirvana Breckenridge,J-05,3x2,1240,1400,12/17/2023,False
+1065,Nirvana Breckenridge,J-05,3x2,1240,1400,12/18/2023,False
+1066,Nirvana Breckenridge,J-05,3x2,1240,1400,12/19/2023,False
+1067,Nirvana Breckenridge,J-05,3x2,1240,1400,12/20/2023,False
+1068,Nirvana Breckenridge,J-05,3x2,1240,1400,12/21/2023,False
+1069,Nirvana Breckenridge,J-05,3x2,1240,1400,12/22/2023,False
+1070,Nirvana Breckenridge,J-05,3x2,1240,1400,12/23/2023,False
+1071,Nirvana Breckenridge,J-05,3x2,1240,1400,12/24/2023,False
+1072,Nirvana Breckenridge,J-05,3x2,1240,1400,12/25/2023,False
+1073,Nirvana Breckenridge,J-05,3x2,1240,1400,12/26/2023,False
+1074,Nirvana Breckenridge,J-05,3x2,1240,1400,12/27/2023,False
+1075,Nirvana Breckenridge,J-05,3x2,1240,1400,12/28/2023,False
+1076,Nirvana Breckenridge,J-05,3x2,1240,1400,12/29/2023,False
+1077,Nirvana Breckenridge,J-05,3x2,1240,1400,12/30/2023,True
+1078,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/22/2023,False
+1079,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/23/2023,False
+1080,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/24/2023,False
+1081,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/25/2023,False
+1082,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/26/2023,False
+1083,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/27/2023,False
+1084,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/28/2023,False
+1085,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/29/2023,False
+1086,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/30/2023,False
+1087,Nirvana Breckenridge,M-01,3x1.5,1240,1400,10/31/2023,False
+1088,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/01/2023,False
+1089,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/02/2023,False
+1090,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/03/2023,False
+1091,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/04/2023,False
+1092,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/05/2023,False
+1093,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/06/2023,False
+1094,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/07/2023,False
+1095,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/08/2023,False
+1096,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/09/2023,False
+1097,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/10/2023,False
+1098,Nirvana Breckenridge,M-01,3x1.5,1240,1400,11/11/2023,True
+1099,Nirvana Breckenridge,N-16,2x2,1040,1225,10/22/2023,False
+1100,Nirvana Breckenridge,N-16,2x2,1040,1225,10/23/2023,False
+1101,Nirvana Breckenridge,N-16,2x2,1040,1225,10/24/2023,False
+1102,Nirvana Breckenridge,N-16,2x2,1040,1225,10/25/2023,False
+1103,Nirvana Breckenridge,N-16,2x2,1040,1225,10/26/2023,False
+1104,Nirvana Breckenridge,N-16,2x2,1040,1225,10/27/2023,False
+1105,Nirvana Breckenridge,N-16,2x2,1040,1225,10/28/2023,False
+1106,Nirvana Breckenridge,N-16,2x2,1040,1225,10/29/2023,False
+1107,Nirvana Breckenridge,N-16,2x2,1040,1225,10/30/2023,False
+1108,Nirvana Breckenridge,N-16,2x2,1040,1225,10/31/2023,False
+1109,Nirvana Breckenridge,N-16,2x2,1040,1225,11/01/2023,False
+1110,Nirvana Breckenridge,N-16,2x2,1040,1225,11/02/2023,False
+1111,Nirvana Breckenridge,N-16,2x2,1040,1225,11/03/2023,False
+1112,Nirvana Breckenridge,N-16,2x2,1040,1225,11/04/2023,False
+1113,Nirvana Breckenridge,N-16,2x2,1040,1225,11/05/2023,False
+1114,Nirvana Breckenridge,N-16,2x2,1040,1225,11/06/2023,False
+1115,Nirvana Breckenridge,N-16,2x2,1040,1225,11/07/2023,False
+1116,Nirvana Breckenridge,N-16,2x2,1040,1225,11/08/2023,False
+1117,Nirvana Breckenridge,N-16,2x2,1040,1225,11/09/2023,False
+1118,Nirvana Breckenridge,N-16,2x2,1040,1225,11/10/2023,False
+1119,Nirvana Breckenridge,N-16,2x2,1040,1225,11/11/2023,False
+1120,Nirvana Breckenridge,N-16,2x2,1040,1225,11/12/2023,False
+1121,Nirvana Breckenridge,N-16,2x2,1040,1225,11/13/2023,False
+1122,Nirvana Breckenridge,N-16,2x2,1040,1225,11/14/2023,False
+1123,Nirvana Breckenridge,N-16,2x2,1040,1225,11/15/2023,False
+1124,Nirvana Breckenridge,N-16,2x2,1040,1225,11/16/2023,False
+1125,Nirvana Breckenridge,N-16,2x2,1040,1225,11/17/2023,False
+1126,Nirvana Breckenridge,N-16,2x2,1040,1225,11/18/2023,False
+1127,Nirvana Breckenridge,N-16,2x2,1040,1225,11/19/2023,False
+1128,Nirvana Breckenridge,N-16,2x2,1040,1225,11/20/2023,False
+1129,Nirvana Breckenridge,N-16,2x2,1040,1225,11/21/2023,False
+1130,Nirvana Breckenridge,N-16,2x2,1040,1225,11/22/2023,False
+1131,Nirvana Breckenridge,N-16,2x2,1040,1225,11/23/2023,False
+1132,Nirvana Breckenridge,N-16,2x2,1040,1225,11/24/2023,False
+1133,Nirvana Breckenridge,N-16,2x2,1040,1225,11/25/2023,False
+1134,Nirvana Breckenridge,N-16,2x2,1040,1225,11/26/2023,False
+1135,Nirvana Breckenridge,N-16,2x2,1040,1225,11/27/2023,False
+1136,Nirvana Breckenridge,N-16,2x2,1040,1225,11/28/2023,False
+1137,Nirvana Breckenridge,N-16,2x2,1040,1225,11/29/2023,False
+1138,Nirvana Breckenridge,N-16,2x2,1040,1225,11/30/2023,False
+1139,Nirvana Breckenridge,N-16,2x2,1040,1225,12/01/2023,False
+1140,Nirvana Breckenridge,N-16,2x2,1040,1225,12/02/2023,True
+1141,Nirvana Breckenridge,P-06,2x2,1040,1225,10/22/2023,False
+1142,Nirvana Breckenridge,P-06,2x2,1040,1225,10/23/2023,False
+1143,Nirvana Breckenridge,P-06,2x2,1040,1225,10/24/2023,False
+1144,Nirvana Breckenridge,P-06,2x2,1040,1225,10/25/2023,False
+1145,Nirvana Breckenridge,P-06,2x2,1040,1225,10/26/2023,False
+1146,Nirvana Breckenridge,P-06,2x2,1040,1225,10/27/2023,False
+1147,Nirvana Breckenridge,P-06,2x2,1040,1225,10/28/2023,False
+1148,Nirvana Breckenridge,P-06,2x2,1040,1225,10/29/2023,False
+1149,Nirvana Breckenridge,P-06,2x2,1040,1225,10/30/2023,False
+1150,Nirvana Breckenridge,P-06,2x2,1040,1225,10/31/2023,False
+1151,Nirvana Breckenridge,P-06,2x2,1040,1225,11/01/2023,False
+1152,Nirvana Breckenridge,P-06,2x2,1040,1225,11/02/2023,False
+1153,Nirvana Breckenridge,P-06,2x2,1040,1225,11/03/2023,False
+1154,Nirvana Breckenridge,P-06,2x2,1040,1225,11/04/2023,False
+1155,Nirvana Breckenridge,P-06,2x2,1040,1225,11/05/2023,False
+1156,Nirvana Breckenridge,P-06,2x2,1040,1225,11/06/2023,False
+1157,Nirvana Breckenridge,P-06,2x2,1040,1225,11/07/2023,False
+1158,Nirvana Breckenridge,P-06,2x2,1040,1225,11/08/2023,False
+1159,Nirvana Breckenridge,P-06,2x2,1040,1225,11/09/2023,False
+1160,Nirvana Breckenridge,P-06,2x2,1040,1225,11/10/2023,False
+1161,Nirvana Breckenridge,P-06,2x2,1040,1225,11/11/2023,False
+1162,Nirvana Breckenridge,P-06,2x2,1040,1225,11/12/2023,False
+1163,Nirvana Breckenridge,P-06,2x2,1040,1225,11/13/2023,False
+1164,Nirvana Breckenridge,P-06,2x2,1040,1225,11/14/2023,False
+1165,Nirvana Breckenridge,P-06,2x2,1040,1225,11/15/2023,False
+1166,Nirvana Breckenridge,P-06,2x2,1040,1225,11/16/2023,False
+1167,Nirvana Breckenridge,P-06,2x2,1040,1225,11/17/2023,False
+1168,Nirvana Breckenridge,P-06,2x2,1040,1225,11/18/2023,False
+1169,Nirvana Breckenridge,P-06,2x2,1040,1225,11/19/2023,False
+1170,Nirvana Breckenridge,P-06,2x2,1040,1225,11/20/2023,False
+1171,Nirvana Breckenridge,P-06,2x2,1040,1225,11/21/2023,False
+1172,Nirvana Breckenridge,P-06,2x2,1040,1225,11/22/2023,False
+1173,Nirvana Breckenridge,P-06,2x2,1040,1225,11/23/2023,False
+1174,Nirvana Breckenridge,P-06,2x2,1040,1225,11/24/2023,False
+1175,Nirvana Breckenridge,P-06,2x2,1040,1225,11/25/2023,False
+1176,Nirvana Breckenridge,P-06,2x2,1040,1225,11/26/2023,False
+1177,Nirvana Breckenridge,P-06,2x2,1040,1225,11/27/2023,False
+1178,Nirvana Breckenridge,P-06,2x2,1040,1225,11/28/2023,False
+1179,Nirvana Breckenridge,P-06,2x2,1040,1225,11/29/2023,False
+1180,Nirvana Breckenridge,P-06,2x2,1040,1225,11/30/2023,False
+1181,Nirvana Breckenridge,P-06,2x2,1040,1225,12/01/2023,False
+1182,Nirvana Breckenridge,P-06,2x2,1040,1225,12/02/2023,False
+1183,Nirvana Breckenridge,P-06,2x2,1040,1225,12/03/2023,False
+1184,Nirvana Breckenridge,P-06,2x2,1040,1225,12/04/2023,False
+1185,Nirvana Breckenridge,P-06,2x2,1040,1225,12/05/2023,False
+1186,Nirvana Breckenridge,P-06,2x2,1040,1225,12/06/2023,False
+1187,Nirvana Breckenridge,P-06,2x2,1040,1225,12/07/2023,False
+1188,Nirvana Breckenridge,P-06,2x2,1040,1225,12/08/2023,False
+1189,Nirvana Breckenridge,P-06,2x2,1040,1225,12/09/2023,False
+1190,Nirvana Breckenridge,P-06,2x2,1040,1225,12/10/2023,False
+1191,Nirvana Breckenridge,P-06,2x2,1040,1225,12/11/2023,False
+1192,Nirvana Breckenridge,P-06,2x2,1040,1225,12/12/2023,False
+1193,Nirvana Breckenridge,P-06,2x2,1040,1225,12/13/2023,False
+1194,Nirvana Breckenridge,P-06,2x2,1040,1225,12/14/2023,False
+1195,Nirvana Breckenridge,P-06,2x2,1040,1225,12/15/2023,False
+1196,Nirvana Breckenridge,P-06,2x2,1040,1225,12/16/2023,False
+1197,Nirvana Breckenridge,P-06,2x2,1040,1225,12/17/2023,False
+1198,Nirvana Breckenridge,P-06,2x2,1040,1225,12/18/2023,False
+1199,Nirvana Breckenridge,P-06,2x2,1040,1225,12/19/2023,False
+1200,Nirvana Breckenridge,P-06,2x2,1040,1225,12/20/2023,False
+1201,Nirvana Breckenridge,P-06,2x2,1040,1225,12/21/2023,False
+1202,Nirvana Breckenridge,P-06,2x2,1040,1225,12/22/2023,False
+1203,Nirvana Breckenridge,P-06,2x2,1040,1225,12/23/2023,False
+1204,Nirvana Breckenridge,P-06,2x2,1040,1225,12/24/2023,False
+1205,Nirvana Breckenridge,P-06,2x2,1040,1225,12/25/2023,False
+1206,Nirvana Breckenridge,P-06,2x2,1040,1225,12/26/2023,False
+1207,Nirvana Breckenridge,P-06,2x2,1040,1225,12/27/2023,False
+1208,Nirvana Breckenridge,P-06,2x2,1040,1225,12/28/2023,False
+1209,Nirvana Breckenridge,P-06,2x2,1040,1225,12/29/2023,False
+1210,Nirvana Breckenridge,P-06,2x2,1040,1225,12/30/2023,False
+1211,Nirvana Breckenridge,P-06,2x2,1040,1225,12/31/2023,False
+1212,Nirvana Breckenridge,P-06,2x2,1040,1225,01/01/2024,False
+1213,Nirvana Breckenridge,P-06,2x2,1040,1225,01/02/2024,False
+1214,Nirvana Breckenridge,P-06,2x2,1040,1225,01/03/2024,False
+1215,Nirvana Breckenridge,P-06,2x2,1040,1225,01/04/2024,False
+1216,Nirvana Breckenridge,P-06,2x2,1040,1225,01/05/2024,False
+1217,Nirvana Breckenridge,P-06,2x2,1040,1225,01/06/2024,False
+1218,Nirvana Breckenridge,P-06,2x2,1040,1225,01/07/2024,True
+1219,Nirvana Breckenridge,P-08,2x2,1040,1225,10/22/2023,False
+1220,Nirvana Breckenridge,P-08,2x2,1040,1225,10/23/2023,False
+1221,Nirvana Breckenridge,P-08,2x2,1040,1225,10/24/2023,False
+1222,Nirvana Breckenridge,P-08,2x2,1040,1225,10/25/2023,False
+1223,Nirvana Breckenridge,P-08,2x2,1040,1225,10/26/2023,False
+1224,Nirvana Breckenridge,P-08,2x2,1040,1225,10/27/2023,False
+1225,Nirvana Breckenridge,P-08,2x2,1040,1225,10/28/2023,False
+1226,Nirvana Breckenridge,P-08,2x2,1040,1225,10/29/2023,False
+1227,Nirvana Breckenridge,P-08,2x2,1040,1225,10/30/2023,False
+1228,Nirvana Breckenridge,P-08,2x2,1040,1225,10/31/2023,False
+1229,Nirvana Breckenridge,P-08,2x2,1040,1225,11/01/2023,False
+1230,Nirvana Breckenridge,P-08,2x2,1040,1225,11/02/2023,False
+1231,Nirvana Breckenridge,P-08,2x2,1040,1225,11/03/2023,False
+1232,Nirvana Breckenridge,P-08,2x2,1040,1225,11/04/2023,False
+1233,Nirvana Breckenridge,P-08,2x2,1040,1225,11/05/2023,False
+1234,Nirvana Breckenridge,P-08,2x2,1040,1225,11/06/2023,False
+1235,Nirvana Breckenridge,P-08,2x2,1040,1225,11/07/2023,False
+1236,Nirvana Breckenridge,P-08,2x2,1040,1225,11/08/2023,False
+1237,Nirvana Breckenridge,P-08,2x2,1040,1225,11/09/2023,False
+1238,Nirvana Breckenridge,P-08,2x2,1040,1225,11/10/2023,False
+1239,Nirvana Breckenridge,P-08,2x2,1040,1225,11/11/2023,False
+1240,Nirvana Breckenridge,P-08,2x2,1040,1225,11/12/2023,False
+1241,Nirvana Breckenridge,P-08,2x2,1040,1225,11/13/2023,False
+1242,Nirvana Breckenridge,P-08,2x2,1040,1225,11/14/2023,False
+1243,Nirvana Breckenridge,P-08,2x2,1040,1225,11/15/2023,False
+1244,Nirvana Breckenridge,P-08,2x2,1040,1225,11/16/2023,False
+1245,Nirvana Breckenridge,P-08,2x2,1040,1225,11/17/2023,False
+1246,Nirvana Breckenridge,P-08,2x2,1040,1225,11/18/2023,False
+1247,Nirvana Breckenridge,P-08,2x2,1040,1225,11/19/2023,False
+1248,Nirvana Breckenridge,P-08,2x2,1040,1225,11/20/2023,False
+1249,Nirvana Breckenridge,P-08,2x2,1040,1225,11/21/2023,False
+1250,Nirvana Breckenridge,P-08,2x2,1040,1225,11/22/2023,False
+1251,Nirvana Breckenridge,P-08,2x2,1040,1225,11/23/2023,False
+1252,Nirvana Breckenridge,P-08,2x2,1040,1225,11/24/2023,False
+1253,Nirvana Breckenridge,P-08,2x2,1040,1225,11/25/2023,False
+1254,Nirvana Breckenridge,P-08,2x2,1040,1225,11/26/2023,False
+1255,Nirvana Breckenridge,P-08,2x2,1040,1225,11/27/2023,False
+1256,Nirvana Breckenridge,P-08,2x2,1040,1225,11/28/2023,False
+1257,Nirvana Breckenridge,P-08,2x2,1040,1225,11/29/2023,False
+1258,Nirvana Breckenridge,P-08,2x2,1040,1225,11/30/2023,False
+1259,Nirvana Breckenridge,P-08,2x2,1040,1225,12/01/2023,False
+1260,Nirvana Breckenridge,P-08,2x2,1040,1225,12/02/2023,False
+1261,Nirvana Breckenridge,P-08,2x2,1040,1225,12/03/2023,False
+1262,Nirvana Breckenridge,P-08,2x2,1040,1225,12/04/2023,False
+1263,Nirvana Breckenridge,P-08,2x2,1040,1225,12/05/2023,False
+1264,Nirvana Breckenridge,P-08,2x2,1040,1225,12/06/2023,True
+1265,Nirvana Breckenridge,P-09,2x1,1040,1225,08/26/2023,False
+1266,Nirvana Breckenridge,P-09,2x1,1040,1225,08/27/2023,False
+1267,Nirvana Breckenridge,P-09,2x1,1040,1225,08/28/2023,True
+1268,Nirvana Breckenridge,P-15,2x1,1040,1225,10/22/2023,False
+1269,Nirvana Breckenridge,P-15,2x1,1040,1225,10/23/2023,False
+1270,Nirvana Breckenridge,P-15,2x1,1040,1225,10/24/2023,False
+1271,Nirvana Breckenridge,P-15,2x1,1040,1225,10/25/2023,False
+1272,Nirvana Breckenridge,P-15,2x1,1040,1225,10/26/2023,False
+1273,Nirvana Breckenridge,P-15,2x1,1040,1225,10/27/2023,False
+1274,Nirvana Breckenridge,P-15,2x1,1040,1225,10/28/2023,False
+1275,Nirvana Breckenridge,P-15,2x1,1040,1225,10/29/2023,False
+1276,Nirvana Breckenridge,P-15,2x1,1040,1225,10/30/2023,False
+1277,Nirvana Breckenridge,P-15,2x1,1040,1225,10/31/2023,False
+1278,Nirvana Breckenridge,P-15,2x1,1040,1225,11/01/2023,False
+1279,Nirvana Breckenridge,P-15,2x1,1040,1225,11/02/2023,False
+1280,Nirvana Breckenridge,P-15,2x1,1040,1225,11/03/2023,False
+1281,Nirvana Breckenridge,P-15,2x1,1040,1225,11/04/2023,False
+1282,Nirvana Breckenridge,P-15,2x1,1040,1225,11/05/2023,False
+1283,Nirvana Breckenridge,P-15,2x1,1040,1225,11/06/2023,False
+1284,Nirvana Breckenridge,P-15,2x1,1040,1225,11/07/2023,False
+1285,Nirvana Breckenridge,P-15,2x1,1040,1225,11/08/2023,False
+1286,Nirvana Breckenridge,P-15,2x1,1040,1225,11/09/2023,False
+1287,Nirvana Breckenridge,P-15,2x1,1040,1225,11/10/2023,False
+1288,Nirvana Breckenridge,P-15,2x1,1040,1225,11/11/2023,False
+1289,Nirvana Breckenridge,P-15,2x1,1040,1225,11/12/2023,False
+1290,Nirvana Breckenridge,P-15,2x1,1040,1225,11/13/2023,False
+1291,Nirvana Breckenridge,P-15,2x1,1040,1225,11/14/2023,False
+1292,Nirvana Breckenridge,P-15,2x1,1040,1225,11/15/2023,False
+1293,Nirvana Breckenridge,P-15,2x1,1040,1225,11/16/2023,False
+1294,Nirvana Breckenridge,P-15,2x1,1040,1225,11/17/2023,False
+1295,Nirvana Breckenridge,P-15,2x1,1040,1225,11/18/2023,False
+1296,Nirvana Breckenridge,P-15,2x1,1040,1225,11/19/2023,False
+1297,Nirvana Breckenridge,P-15,2x1,1040,1225,11/20/2023,False
+1298,Nirvana Breckenridge,P-15,2x1,1040,1225,11/21/2023,False
+1299,Nirvana Breckenridge,P-15,2x1,1040,1225,11/22/2023,False
+1300,Nirvana Breckenridge,P-15,2x1,1040,1225,11/23/2023,False
+1301,Nirvana Breckenridge,P-15,2x1,1040,1225,11/24/2023,False
+1302,Nirvana Breckenridge,P-15,2x1,1040,1225,11/25/2023,False
+1303,Nirvana Breckenridge,P-15,2x1,1040,1225,11/26/2023,False
+1304,Nirvana Breckenridge,P-15,2x1,1040,1225,11/27/2023,False
+1305,Nirvana Breckenridge,P-15,2x1,1040,1225,11/28/2023,False
+1306,Nirvana Breckenridge,P-15,2x1,1040,1225,11/29/2023,False
+1307,Nirvana Breckenridge,P-15,2x1,1040,1225,11/30/2023,False
+1308,Nirvana Breckenridge,P-15,2x1,1040,1225,12/01/2023,False
+1309,Nirvana Breckenridge,P-15,2x1,1040,1225,12/02/2023,False
+1310,Nirvana Breckenridge,P-15,2x1,1040,1225,12/03/2023,False
+1311,Nirvana Breckenridge,P-15,2x1,1040,1225,12/04/2023,False
+1312,Nirvana Breckenridge,P-15,2x1,1040,1225,12/05/2023,False
+1313,Nirvana Breckenridge,P-15,2x1,1040,1225,12/06/2023,False
+1314,Nirvana Breckenridge,P-15,2x1,1040,1225,12/07/2023,False
+1315,Nirvana Breckenridge,P-15,2x1,1040,1225,12/08/2023,False
+1316,Nirvana Breckenridge,P-15,2x1,1040,1225,12/09/2023,False
+1317,Nirvana Breckenridge,P-15,2x1,1040,1225,12/10/2023,False
+1318,Nirvana Breckenridge,P-15,2x1,1040,1225,12/11/2023,False
+1319,Nirvana Breckenridge,P-15,2x1,1040,1225,12/12/2023,False
+1320,Nirvana Breckenridge,P-15,2x1,1040,1225,12/13/2023,False
+1321,Nirvana Breckenridge,P-15,2x1,1040,1225,12/14/2023,False
+1322,Nirvana Breckenridge,P-15,2x1,1040,1225,12/15/2023,False
+1323,Nirvana Breckenridge,P-15,2x1,1040,1225,12/16/2023,False
+1324,Nirvana Breckenridge,P-15,2x1,1040,1225,12/17/2023,False
+1325,Nirvana Breckenridge,P-15,2x1,1040,1225,12/18/2023,False
+1326,Nirvana Breckenridge,P-15,2x1,1040,1225,12/19/2023,False
+1327,Nirvana Breckenridge,P-15,2x1,1040,1225,12/20/2023,False
+1328,Nirvana Breckenridge,P-15,2x1,1040,1225,12/21/2023,False
+1329,Nirvana Breckenridge,P-15,2x1,1040,1225,12/22/2023,False
+1330,Nirvana Breckenridge,P-15,2x1,1040,1225,12/23/2023,False
+1331,Nirvana Breckenridge,P-15,2x1,1040,1225,12/24/2023,False
+1332,Nirvana Breckenridge,P-15,2x1,1040,1225,12/25/2023,False
+1333,Nirvana Breckenridge,P-15,2x1,1040,1225,12/26/2023,False
+1334,Nirvana Breckenridge,P-15,2x1,1040,1225,12/27/2023,False
+1335,Nirvana Breckenridge,P-15,2x1,1040,1225,12/28/2023,False
+1336,Nirvana Breckenridge,P-15,2x1,1040,1225,12/29/2023,False
+1337,Nirvana Breckenridge,P-15,2x1,1040,1225,12/30/2023,False
+1338,Nirvana Breckenridge,P-15,2x1,1040,1225,12/31/2023,False
+1339,Nirvana Breckenridge,P-15,2x1,1040,1225,01/01/2024,False
+1340,Nirvana Breckenridge,P-15,2x1,1040,1225,01/02/2024,False
+1341,Nirvana Breckenridge,P-15,2x1,1040,1225,01/03/2024,False
+1342,Nirvana Breckenridge,P-15,2x1,1040,1225,01/04/2024,False
+1343,Nirvana Breckenridge,P-15,2x1,1040,1225,01/05/2024,False
+1344,Nirvana Breckenridge,P-15,2x1,1040,1225,01/06/2024,False
+1345,Nirvana Breckenridge,P-15,2x1,1040,1225,01/07/2024,True
+1346,Nirvana Breckenridge,R-04,2x2,1040,1225,10/22/2023,False
+1347,Nirvana Breckenridge,R-04,2x2,1040,1225,10/23/2023,False
+1348,Nirvana Breckenridge,R-04,2x2,1040,1225,10/24/2023,False
+1349,Nirvana Breckenridge,R-04,2x2,1040,1225,10/25/2023,False
+1350,Nirvana Breckenridge,R-04,2x2,1040,1225,10/26/2023,False
+1351,Nirvana Breckenridge,R-04,2x2,1040,1225,10/27/2023,False
+1352,Nirvana Breckenridge,R-04,2x2,1040,1225,10/28/2023,False
+1353,Nirvana Breckenridge,R-04,2x2,1040,1225,10/29/2023,False
+1354,Nirvana Breckenridge,R-04,2x2,1040,1225,10/30/2023,False
+1355,Nirvana Breckenridge,R-04,2x2,1040,1225,10/31/2023,False
+1356,Nirvana Breckenridge,R-04,2x2,1040,1225,11/01/2023,False
+1357,Nirvana Breckenridge,R-04,2x2,1040,1225,11/02/2023,False
+1358,Nirvana Breckenridge,R-04,2x2,1040,1225,11/03/2023,False
+1359,Nirvana Breckenridge,R-04,2x2,1040,1225,11/04/2023,False
+1360,Nirvana Breckenridge,R-04,2x2,1040,1225,11/05/2023,False
+1361,Nirvana Breckenridge,R-04,2x2,1040,1225,11/06/2023,False
+1362,Nirvana Breckenridge,R-04,2x2,1040,1225,11/07/2023,False
+1363,Nirvana Breckenridge,R-04,2x2,1040,1225,11/08/2023,False
+1364,Nirvana Breckenridge,R-04,2x2,1040,1225,11/09/2023,False
+1365,Nirvana Breckenridge,R-04,2x2,1040,1225,11/10/2023,False
+1366,Nirvana Breckenridge,R-04,2x2,1040,1225,11/11/2023,False
+1367,Nirvana Breckenridge,R-04,2x2,1040,1225,11/12/2023,False
+1368,Nirvana Breckenridge,R-04,2x2,1040,1225,11/13/2023,False
+1369,Nirvana Breckenridge,R-04,2x2,1040,1225,11/14/2023,False
+1370,Nirvana Breckenridge,R-04,2x2,1040,1225,11/15/2023,False
+1371,Nirvana Breckenridge,R-04,2x2,1040,1225,11/16/2023,False
+1372,Nirvana Breckenridge,R-04,2x2,1040,1225,11/17/2023,False
+1373,Nirvana Breckenridge,R-04,2x2,1040,1225,11/18/2023,False
+1374,Nirvana Breckenridge,R-04,2x2,1040,1225,11/19/2023,False
+1375,Nirvana Breckenridge,R-04,2x2,1040,1225,11/20/2023,False
+1376,Nirvana Breckenridge,R-04,2x2,1040,1225,11/21/2023,False
+1377,Nirvana Breckenridge,R-04,2x2,1040,1225,11/22/2023,False
+1378,Nirvana Breckenridge,R-04,2x2,1040,1225,11/23/2023,False
+1379,Nirvana Breckenridge,R-04,2x2,1040,1225,11/24/2023,False
+1380,Nirvana Breckenridge,R-04,2x2,1040,1225,11/25/2023,False
+1381,Nirvana Breckenridge,R-04,2x2,1040,1225,11/26/2023,False
+1382,Nirvana Breckenridge,R-04,2x2,1040,1225,11/27/2023,False
+1383,Nirvana Breckenridge,R-04,2x2,1040,1225,11/28/2023,False
+1384,Nirvana Breckenridge,R-04,2x2,1040,1225,11/29/2023,False
+1385,Nirvana Breckenridge,R-04,2x2,1040,1225,11/30/2023,False
+1386,Nirvana Breckenridge,R-04,2x2,1040,1225,12/01/2023,False
+1387,Nirvana Breckenridge,R-04,2x2,1040,1225,12/02/2023,False
+1388,Nirvana Breckenridge,R-04,2x2,1040,1225,12/03/2023,False
+1389,Nirvana Breckenridge,R-04,2x2,1040,1225,12/04/2023,False
+1390,Nirvana Breckenridge,R-04,2x2,1040,1225,12/05/2023,False
+1391,Nirvana Breckenridge,R-04,2x2,1040,1225,12/06/2023,False
+1392,Nirvana Breckenridge,R-04,2x2,1040,1225,12/07/2023,False
+1393,Nirvana Breckenridge,R-04,2x2,1040,1225,12/08/2023,False
+1394,Nirvana Breckenridge,R-04,2x2,1040,1225,12/09/2023,False
+1395,Nirvana Breckenridge,R-04,2x2,1040,1225,12/10/2023,False
+1396,Nirvana Breckenridge,R-04,2x2,1040,1225,12/11/2023,False
+1397,Nirvana Breckenridge,R-04,2x2,1040,1225,12/12/2023,False
+1398,Nirvana Breckenridge,R-04,2x2,1040,1225,12/13/2023,False
+1399,Nirvana Breckenridge,R-04,2x2,1040,1225,12/14/2023,False
+1400,Nirvana Breckenridge,R-04,2x2,1040,1225,12/15/2023,False
+1401,Nirvana Breckenridge,R-04,2x2,1040,1225,12/16/2023,False
+1402,Nirvana Breckenridge,R-04,2x2,1040,1225,12/17/2023,False
+1403,Nirvana Breckenridge,R-04,2x2,1040,1225,12/18/2023,False
+1404,Nirvana Breckenridge,R-04,2x2,1040,1225,12/19/2023,False
+1405,Nirvana Breckenridge,R-04,2x2,1040,1225,12/20/2023,False
+1406,Nirvana Breckenridge,R-04,2x2,1040,1225,12/21/2023,False
+1407,Nirvana Breckenridge,R-04,2x2,1040,1225,12/22/2023,False
+1408,Nirvana Breckenridge,R-04,2x2,1040,1225,12/23/2023,False
+1409,Nirvana Breckenridge,R-04,2x2,1040,1225,12/24/2023,False
+1410,Nirvana Breckenridge,R-04,2x2,1040,1225,12/25/2023,False
+1411,Nirvana Breckenridge,R-04,2x2,1040,1225,12/26/2023,False
+1412,Nirvana Breckenridge,R-04,2x2,1040,1225,12/27/2023,False
+1413,Nirvana Breckenridge,R-04,2x2,1040,1225,12/28/2023,False
+1414,Nirvana Breckenridge,R-04,2x2,1040,1225,12/29/2023,False
+1415,Nirvana Breckenridge,R-04,2x2,1040,1225,12/30/2023,False
+1416,Nirvana Breckenridge,R-04,2x2,1040,1225,12/31/2023,False
+1417,Nirvana Breckenridge,R-04,2x2,1040,1225,01/01/2024,False
+1418,Nirvana Breckenridge,R-04,2x2,1040,1225,01/02/2024,False
+1419,Nirvana Breckenridge,R-04,2x2,1040,1225,01/03/2024,False
+1420,Nirvana Breckenridge,R-04,2x2,1040,1225,01/04/2024,False
+1421,Nirvana Breckenridge,R-04,2x2,1040,1225,01/05/2024,False
+1422,Nirvana Breckenridge,R-04,2x2,1040,1225,01/06/2024,False
+1423,Nirvana Breckenridge,R-04,2x2,1040,1225,01/07/2024,True
+1424,Nirvana Breckenridge,S-04,2x1,1040,1225,10/22/2023,False
+1425,Nirvana Breckenridge,S-04,2x1,1040,1225,10/23/2023,False
+1426,Nirvana Breckenridge,S-04,2x1,1040,1225,10/24/2023,False
+1427,Nirvana Breckenridge,S-04,2x1,1040,1225,10/25/2023,False
+1428,Nirvana Breckenridge,S-04,2x1,1040,1225,10/26/2023,False
+1429,Nirvana Breckenridge,S-04,2x1,1040,1225,10/27/2023,False
+1430,Nirvana Breckenridge,S-04,2x1,1040,1225,10/28/2023,False
+1431,Nirvana Breckenridge,S-04,2x1,1040,1225,10/29/2023,False
+1432,Nirvana Breckenridge,S-04,2x1,1040,1225,10/30/2023,False
+1433,Nirvana Breckenridge,S-04,2x1,1040,1225,10/31/2023,False
+1434,Nirvana Breckenridge,S-04,2x1,1040,1225,11/01/2023,False
+1435,Nirvana Breckenridge,S-04,2x1,1040,1225,11/02/2023,False
+1436,Nirvana Breckenridge,S-04,2x1,1040,1225,11/03/2023,False
+1437,Nirvana Breckenridge,S-04,2x1,1040,1225,11/04/2023,True
