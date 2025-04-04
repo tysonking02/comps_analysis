@@ -259,17 +259,16 @@ if submit_button:
     st.subheader(f"{time_frame} Rev / Avail Sqft. Rank for {selected_property}")
     st.dataframe(styled_df)
 
-    st.markdown(f"""
-    ### Period Quality Breakdown
+    with st.expander("Period Quality Breakdown"):
+        st.markdown(f"""
+        - **Rank Improves (e.g., 2 → 1):**  
+        Period quality is **Good**
 
-    - **Rank Improves (e.g., 2 → 1):**  
-    Period quality is **Good**
+        - **Rank Declines (e.g., 1 → 2):**  
+        Period quality is **Bad**
 
-    - **Rank Declines (e.g., 1 → 2):**  
-    Period quality is **Bad**
-
-    - **Rank Stays the Same:**  
-    Compare the **RevPASf {time_frame} change** to the **Comp Set Mean**:
-        - If RevPASf increased relative to the Comp Mean → **Good**  
-        - If RevPASf decreased relative to the Comp Mean → **Bad**
-    """)
+        - **Rank Stays the Same:**  
+        Compare the **RevPASf {time_frame} change** to the **Comp Set Mean**:
+            - If RevPASf increased relative to the Comp Mean → **Good**  
+            - If RevPASf decreased relative to the Comp Mean → **Bad**
+        """)
