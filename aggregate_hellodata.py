@@ -284,7 +284,6 @@ def get_cortland_mix(AssetCode):
 
 # endregion
 
-
 # region Calculate Net Leased
 
 def get_net_leased(history_df, num_units, building):

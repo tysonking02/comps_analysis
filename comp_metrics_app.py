@@ -40,24 +40,47 @@ if submit_button:
 
     metrics = metrics[metrics['date'] >= pd.to_datetime('2024-01-01')]
 
+    mean_metrics = metrics.groupby('date').agg(rev_pasf_avg=('rev_pasf', 'mean')).reset_index()
+
+    metrics = pd.merge(metrics, mean_metrics, on="date")
+
+    mean_metrics['property'] = 'Mean'
+
+    mean_metrics = mean_metrics.rename(columns={"rev_pasf_avg": "rev_pasf"})
+
+    metrics = pd.concat([metrics, mean_metrics])
+
+    def custom_order(prop):
+        if prop == selected_property:
+            return (0, "")
+        elif prop == "Mean":
+            return (1, "")
+        else:
+            return (2, prop.lower())
+        
+    metrics['sort_order'] = metrics['property'].apply(custom_order)
+    metrics = metrics.sort_values(by='sort_order').drop(columns='sort_order')
+
     st.subheader(f"{selected_property} vs. Comps")
 
     ymin = metrics['rev_pasf'].min() - 0.2
     ymax = metrics['rev_pasf'].max() + 0.2
 
     base_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd',
-               '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
+                '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 
     # Get unique property list
     properties = metrics['property'].unique().tolist()
 
-    # Build color mapping
+    # Build color mapping: use red for "Mean", black for selected_property, and cycle base_colors for others
     color_mapping = {}
     color_iter = itertools.cycle(base_colors)
 
     for prop in properties:
-        if prop == selected_property:
-            color_mapping[prop] = 'black'
+        if prop == "Mean":
+            color_mapping[prop] = "red"
+        elif prop == selected_property:
+            color_mapping[prop] = "black"
         else:
             color_mapping[prop] = next(color_iter)
 
@@ -69,7 +92,7 @@ if submit_button:
 
     acquisition_date = dimasset[dimasset['AssetCode'] == selected_asset_code]['AcquisitionDate'].iloc[0]
 
-    # Unified chart with visual emphasis
+    # Create the Altair chart with conditional encodings
     chart = alt.Chart(metrics).mark_line().encode(
         x=alt.X(
             'date:T',
@@ -83,10 +106,16 @@ if submit_button:
         ),
         color=alt.Color('property:N', scale=color_scale, legend=alt.Legend(title="Properties")),
         size=alt.condition(
-            alt.datum.property == selected_property,
-            alt.value(6),  # thicker line for selected
-            alt.value(1)   # normal for others
+            (alt.datum.property == selected_property) | (alt.datum.property == 'Mean'),
+            alt.value(5),  # thicker line for selected property or Mean
+            alt.value(1)   # normal thickness for others
         ),
+        # If property is "Mean", use a dashed stroke, otherwise solid
+        # strokeDash=alt.condition(
+        #     (alt.datum.property == "Mean"),
+        #     alt.value([5, 3]),  # dashed for "Mean"
+        #     alt.value([0])      # solid for others
+        # ),
         opacity=alt.condition(
             alt.datum.property == selected_property,
             alt.value(1.0),
@@ -99,8 +128,11 @@ if submit_button:
     ).interactive()
 
     if acquisition_date >= "2024-01-01":
-
-        label_data = pd.DataFrame({'date': [acquisition_date], 'label': ['Acquisition Date'], 'y_pos': [ymax-0.1]})
+        label_data = pd.DataFrame({
+            'date': [acquisition_date],
+            'label': ['Acquisition Date'],
+            'y_pos': [ymax - 0.1]
+        })
 
         rule = alt.Chart(label_data).mark_rule(
             strokeDash=[6, 4], color='black'
@@ -120,11 +152,11 @@ if submit_button:
             text='label'
         )
 
-
-        # Combine chart and rule
+        # Combine chart with rule and label
         chart = (chart + rule + label).interactive()
 
     st.altair_chart(chart, use_container_width=True)
+
 
     income_metrics = factaccountgrouptotal[factaccountgrouptotal['AssetCode'] == selected_asset_code]
 
@@ -156,6 +188,7 @@ if submit_button:
     # Get the first date of each period
     avg_metrics = metrics.sort_values('date').groupby(['property', 'period', 'Time Period']).agg({
         "rev_pasf": "mean",
+        "rev_pasf_avg": "mean",
         "Amount": "first"
     }).reset_index()
 
@@ -163,6 +196,9 @@ if submit_button:
     avg_metrics['rev_pasf_rank'] = avg_metrics.groupby(['period', 'Time Period'])['rev_pasf'].rank(method='dense', ascending=False)
 
     avg_metrics['prev_rank'] = avg_metrics['rev_pasf_rank'].shift(1)
+
+    avg_metrics['rev_pasf_vs_avg'] = avg_metrics['rev_pasf'] - avg_metrics['rev_pasf_avg']
+    avg_metrics['prev_rev_pasf_vs_avg'] = avg_metrics['rev_pasf_vs_avg'].shift(1)
 
     avg_metrics['prev_income'] = avg_metrics['Amount'].shift(1)
     avg_metrics['income_growth'] = avg_metrics['Amount'] - avg_metrics['prev_income']
@@ -177,12 +213,16 @@ if submit_button:
         elif row['rev_pasf_rank'] > row['prev_rank']:
             return 'Poor'
         else:
+            if row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg']:
+                return 'Good'
+            elif row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg']:
+                return 'Poor'
             return 'Neutral'
 
     avg_metrics['period_quality'] = avg_metrics.apply(classify_quality, axis=1)
 
-    avg_metrics = avg_metrics.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'period_quality', 'rev_pasf', 'income_growth']]
-    avg_metrics.rename(columns={"rev_pasf": "Rev/Avail Sqft.", "rev_pasf_rank": "Rank", "prev_rank": "Prev. Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
+    avg_metrics = avg_metrics.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'rev_pasf', 'rev_pasf_vs_avg', 'period_quality', 'income_growth']]
+    avg_metrics.rename(columns={"rev_pasf": "RevPASF", "rev_pasf_vs_avg": "RevPASF vs Avg.", "rev_pasf_rank": "Rank", "prev_rank": "T1 Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
 
     def highlight_quality(val):
         if val == 'Good':
@@ -206,9 +246,10 @@ if submit_button:
         avg_metrics
         .style
         .format({
-            'Rev/Avail Sqft.': '${:.2f}',
+            'RevPASF': '${:.2f}',
+            'RevPASF vs Avg.': '${:.2f}',
             'Rank': '{:.0f}',
-            'Prev. Rank': '{:.0f}',
+            'T1 Rank': '{:.0f}',
             'Rental Income Growth/Decline': lambda x: f"${abs(x):,.0f}"
         })
         .applymap(highlight_quality, subset=['Quality'])
@@ -217,3 +258,18 @@ if submit_button:
 
     st.subheader(f"{time_frame} Rev / Avail Sqft. Rank for {selected_property}")
     st.dataframe(styled_df)
+
+    st.markdown(f"""
+    ### Period Quality Breakdown
+
+    - **Rank Improves (e.g., 2 → 1):**  
+    Period quality is **Good**
+
+    - **Rank Declines (e.g., 1 → 2):**  
+    Period quality is **Bad**
+
+    - **Rank Stays the Same:**  
+    Compare the **RevPASf {time_frame} change** to the **Comp Set Mean**:
+        - If RevPASf increased relative to the Comp Mean → **Good**  
+        - If RevPASf decreased relative to the Comp Mean → **Bad**
+    """)
