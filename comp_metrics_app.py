@@ -213,9 +213,9 @@ if submit_button:
         elif row['rev_pasf_rank'] > row['prev_rank']:
             return 'Poor'
         else:
-            if row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg']:
+            if row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg']:
                 return 'Good'
-            elif row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg']:
+            elif row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg']:
                 return 'Poor'
             return 'Neutral'
 
