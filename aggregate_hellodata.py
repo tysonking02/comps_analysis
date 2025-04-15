@@ -163,6 +163,7 @@ def get_unit_history(property_details, building_name=None):
 
     availability = property_details.get('building_availability', [])
     num_units = property_details.get('number_units', 0)
+    market = property_details.get('msa')
 
     for unit_id, cur_availability in enumerate(availability):
         if not isinstance(cur_availability, dict):
@@ -191,6 +192,7 @@ def get_unit_history(property_details, building_name=None):
 
                     cur_history_df = pd.DataFrame(
                         {"building_name": building_name,
+                         "market": market,
                             "unit_name": unit_name,
                             "unit_group": unit_group,
                             "sqft": sqft,
@@ -232,6 +234,7 @@ def get_unit_history(property_details, building_name=None):
             for single_date in date_range:
                 expanded_history.append({
                     "building_name": row["building_name"],
+                    "market": row["market"],
                     "unit_name": row["unit_name"],
                     "unit_group": row["unit_group"],
                     "sqft": row['sqft'],
@@ -247,6 +250,16 @@ def get_unit_history(property_details, building_name=None):
 
     expanded_history_df = pd.DataFrame(expanded_history).dropna(subset=['unit_name'])
     expanded_history_df.to_csv(f'data/HelloData/unit_history/{building_name} Unit History.csv')
+
+    markets = pd.read_csv('data/markets.csv')
+
+    market = expanded_history_df.loc[0, 'market']
+
+    # Check if this property is already in the file
+    if not ((markets['property'] == building_name) & (markets['market'] == market)).any():
+        new_row = pd.DataFrame({'market': [market], 'property': [building_name]})
+        markets = pd.concat([markets, new_row], ignore_index=True)
+        markets.to_csv('data/markets.csv', index=False)
 
     return expanded_history_df, num_units
 
@@ -462,14 +475,14 @@ def process_property(args):
     file_path = f"data/HelloData/comp_metrics/{property} Comp Metrics.csv"
     
     # Skip if the file already exists
-    if os.path.exists(file_path):
-        return None
-    
+    # if os.path.exists(file_path):
+    #     return None
+
     # Call get_comp_metrics with the property details
     metrics = get_comp_metrics(property, lat, lon, zip_code)
-    
+
     if metrics is not None:
-        metrics.to_csv(file_path)
+        metrics.to_csv(file_path, index=False)
     
     return property
 
@@ -481,6 +494,8 @@ if __name__ == '__main__':
         (row['ParentAssetName'], row['Latitude'], row['Longitude'])
         for _, row in dimasset.iterrows()
     ]
+
+    pd.DataFrame(columns=['market', 'property']).to_csv('data/markets.csv', index=False)
     
     # Create a multiprocessing pool and process each property concurrently
     with Pool(cpu_count()) as pool:

@@ -16,20 +16,29 @@ factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
 
 factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal_filtered.csv')
 
-
-st.header("Revenue Period Quality Analysis")
+market_list = pd.read_csv('data/markets.csv')['market'].unique()
+market_list = sorted(market_list)
 
 property_list = os.listdir('data/HelloData/comp_metrics')
 property_list = [filename.replace(' Comp Metrics.csv', '') for filename in property_list]
 
-selected_property = st.selectbox("Select Property", sorted(property_list))
-selected_asset_code = dimasset[dimasset['ParentAssetName'] == selected_property]['AssetCode'].iloc[0]
+st.header("Revenue Period Quality Analysis")
+
+selected_rollup = st.selectbox("Select Rollup", ['Market', 'Property'])
+
+if selected_rollup:
+    if selected_rollup == 'Market':
+        selected_market = st.selectbox("Select Market", market_list)
+
+    else:
+        selected_property = st.selectbox("Select Property", sorted(property_list))
+        selected_asset_code = dimasset[dimasset['ParentAssetName'] == selected_property]['AssetCode'].iloc[0]
 
 time_frame = st.radio("Aggregation Time Frame", ["MoM", "QoQ"])
 
 submit_button = st.button("Submit")
 
-if submit_button:
+if submit_button and selected_rollup == 'Property':
     
     if Path(f'data/HelloData/comp_metrics/{selected_property} Comp Metrics.csv').is_file():
         metrics = pd.read_csv(f'data/HelloData/comp_metrics/{selected_property} Comp Metrics.csv')
@@ -39,6 +48,10 @@ if submit_button:
     metrics['date'] = pd.to_datetime(metrics['date'])
 
     metrics = metrics[metrics['date'] >= pd.to_datetime('2024-01-01')]
+
+    valid_props = metrics['property'].value_counts()
+    valid_props = valid_props[valid_props >= 120].index
+    metrics = metrics[metrics['property'].isin(valid_props)]
 
     mean_metrics = metrics.groupby('date').agg(rev_pasf_avg=('rev_pasf', 'mean')).reset_index()
 
@@ -107,8 +120,8 @@ if submit_button:
         color=alt.Color('property:N', scale=color_scale, legend=alt.Legend(title="Properties")),
         size=alt.condition(
             (alt.datum.property == selected_property) | (alt.datum.property == 'Mean'),
-            alt.value(5),  # thicker line for selected property or Mean
-            alt.value(1)   # normal thickness for others
+            alt.value(7),  # thicker line for selected property or Mean
+            alt.value(3)   # normal thickness for others
         ),
         # If property is "Mean", use a dashed stroke, otherwise solid
         # strokeDash=alt.condition(
@@ -117,9 +130,9 @@ if submit_button:
         #     alt.value([0])      # solid for others
         # ),
         opacity=alt.condition(
-            alt.datum.property == selected_property,
+            (alt.datum.property == selected_property) | (alt.datum.property == 'Mean'),
             alt.value(1.0),
-            alt.value(0.8)
+            alt.value(0.6)
         ),
         tooltip=['date', 'property', 'rev_pasf', 'rev_pasf_rank']
     ).properties(
@@ -259,6 +272,15 @@ if submit_button:
     st.subheader(f"{time_frame} Rev / Avail Sqft. Rank for {selected_property}")
     st.dataframe(styled_df)
 
+    with st.expander("RevPASF Calculation"):
+        st.markdown(f"""
+
+        1. **Net Leased**: 1 - (Total # of Listings / Total # of Units)
+        2. **Rent Roll**: Daily average rent / sqft adjusted for unit mix
+                    
+        **RevPASF** - (Rent Roll per Sqft.) x (Net Leased)
+        """)
+
     with st.expander("Period Quality Breakdown"):
         st.markdown(f"""
         - **Rank Improves (e.g., 2 → 1):**  
@@ -272,3 +294,126 @@ if submit_button:
             - If RevPASf increased relative to the Comp Mean → **Good**  
             - If RevPASf decreased relative to the Comp Mean → **Bad**
         """)
+
+elif submit_button and selected_rollup == 'Market':
+
+    markets = pd.read_csv('data/markets.csv')
+    markets = markets[markets['market'] == selected_market]
+
+    all_metrics = pd.DataFrame()
+
+    for i, row in markets.iterrows():
+
+        if Path(f'data/HelloData/comp_metrics/{row['property']} Comp Metrics.csv').is_file():
+            metrics = pd.read_csv(f'data/HelloData/comp_metrics/{row['property']} Comp Metrics.csv')
+        else:
+            continue
+
+        metrics['cortland'] = (metrics['property'] == row['property']).astype(int)
+
+        metrics['date'] = pd.to_datetime(metrics['date'])
+
+        metrics = metrics[metrics['date'] >= pd.to_datetime('2024-01-01')]
+
+        valid_props = metrics['property'].value_counts()
+        valid_props = valid_props[valid_props >= 120].index
+        metrics = metrics[metrics['property'].isin(valid_props)]
+
+        mean_metrics = metrics.groupby('date').agg(rev_pasf_avg=('rev_pasf', 'mean')).reset_index()
+
+        metrics = pd.merge(metrics, mean_metrics, on="date")
+
+        mean_metrics['property'] = 'Mean'
+
+        mean_metrics = mean_metrics.rename(columns={"rev_pasf_avg": "rev_pasf"})
+
+        metrics = pd.concat([metrics, mean_metrics]).dropna(subset='rev_pasf_avg')
+
+        metrics['rev_pasf_vs_avg'] = metrics['rev_pasf'] - metrics['rev_pasf_avg']
+
+        all_metrics = pd.concat([all_metrics, metrics])
+    
+    market_metrics = all_metrics.groupby(['cortland', 'date']).agg({
+        "property": "count",
+        "rev_pasf_vs_avg": "mean"
+    }).reset_index()
+
+    cortland_metrics = market_metrics[market_metrics['cortland'] == 1].drop('cortland', axis=1)
+
+    ymin = market_metrics['rev_pasf_vs_avg'].min() - 0.1
+    ymax = market_metrics['rev_pasf_vs_avg'].max() + 0.1
+
+    line = alt.Chart(cortland_metrics).mark_line(size=5).encode(
+        x=alt.X(
+            'date:T',
+            title='Date',
+            axis=alt.Axis(format='%b %Y', tickCount='month', labelAngle=-45)
+        ),
+        y=alt.Y(
+            'rev_pasf_vs_avg:Q',
+            scale=alt.Scale(domain=[ymin, ymax]),
+            title='Rev PASF vs. Avg.'
+        ),
+        tooltip=['date:T', 'rev_pasf_vs_avg:Q', 'property:N']
+    )
+
+    zero_line = alt.Chart(pd.DataFrame({'y': [0]})).mark_rule(strokeDash=[4, 4], color='gray').encode(
+        y='y:Q'
+    )
+
+    chart = (line + zero_line).properties(
+        width=800,
+        height=400
+    ).interactive()
+
+    st.altair_chart(chart, use_container_width=True)
+
+    cortland_metrics.sort_values('date', ascending=True, inplace=True)
+
+    if time_frame == 'MoM':
+        cortland_metrics['period'] = cortland_metrics['date'].dt.to_period('M').dt.to_timestamp()
+        cortland_metrics['Time Period'] = cortland_metrics['period'].dt.strftime('%b %Y')
+    elif time_frame == 'QoQ':
+        cortland_metrics['period'] = cortland_metrics['date'].dt.to_period('Q').dt.to_timestamp()
+        q = cortland_metrics['period'].dt.quarter
+        y = cortland_metrics['period'].dt.year
+        cortland_metrics['Time Period'] = ['Q' + str(qq) + ' ' + str(yy) for qq, yy in zip(q, y)]
+
+    # Get the first date of each period
+    avg_metrics = cortland_metrics.sort_values('date').groupby(['period', 'Time Period', 'property']).agg({
+        "rev_pasf_vs_avg": "mean",
+    }).reset_index()
+
+    avg_metrics['prev_rev_pasf_vs_avg'] = avg_metrics['rev_pasf_vs_avg'].shift(1)
+
+    def classify_quality(row):
+        if row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg']:
+            return 'Good'
+        elif row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg']:
+            return 'Poor'
+        return 'Neutral'
+
+    avg_metrics['period_quality'] = avg_metrics.apply(classify_quality, axis=1)
+
+    avg_metrics = avg_metrics.sort_values('period')[['Time Period', 'rev_pasf_vs_avg', 'property', 'period_quality']]
+    avg_metrics.rename(columns={"rev_pasf_vs_avg": "RevPASF vs Avg.", "period_quality": "Quality", "property": "# Cortland Assets"}, inplace=True)
+
+    def highlight_quality(val):
+        if val == 'Good':
+            return 'color: green; font-weight: bold'
+        elif val == 'Poor':
+            return 'color: red; font-weight: bold'
+        else:
+            return ''
+
+    styled_df = (
+        avg_metrics
+        .style
+        .format({
+            'RevPASF vs Avg.': '${:.2f}',
+        })
+        .applymap(highlight_quality, subset=['Quality'])
+    )
+
+    st.subheader(f"{time_frame} Rev / Avail Sqft. for {selected_market}")
+    st.dataframe(styled_df)
