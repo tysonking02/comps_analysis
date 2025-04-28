@@ -26,8 +26,8 @@ assetdetailactive = pd.read_csv('data/vw_AssetDetailActive.csv', usecols=['Asset
 
 dimasset = dimasset.merge(assetdetailactive, on='AssetCode')
 
-factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
-factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal_filtered.csv')
+factunitlatest = pd.read_csv('data/FactUnitLatest.csv')
+factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal.csv')
 
 # region Helper Functions
 
@@ -152,7 +152,6 @@ def get_comp_details(property):
 # region Create and Expand Unit History from API
 
 def get_unit_history(property_details, building_name=None):
-        
     if not isinstance(property_details, dict):
         raise TypeError(f"Expected dictionary for property_details, got {type(property_details)}")
 
@@ -167,7 +166,6 @@ def get_unit_history(property_details, building_name=None):
 
     for unit_id, cur_availability in enumerate(availability):
         if not isinstance(cur_availability, dict):
-            print(f"Skipping invalid unit data at index {unit_id}: {type(cur_availability)}")
             continue
 
         try:
@@ -182,7 +180,6 @@ def get_unit_history(property_details, building_name=None):
 
             for pricing_id, cur_history in enumerate(cur_availability.get('history', [])):
                 if not isinstance(cur_history, dict):
-                    print(f"Skipping invalid history data at index {pricing_id}: {type(cur_history)}")
                     continue
 
                 try:
@@ -190,43 +187,40 @@ def get_unit_history(property_details, building_name=None):
                     from_date = cur_history.get('from_date')
                     to_date = cur_history.get('to_date')
 
-                    cur_history_df = pd.DataFrame(
-                        {"building_name": building_name,
-                         "market": market,
-                            "unit_name": unit_name,
-                            "unit_group": unit_group,
-                            "sqft": sqft,
-                            "effective_price": effective_price,
-                            "from_date": from_date,
-                            "to_date": to_date}, index=[0]
-                    )
+                    cur_history_df = pd.DataFrame({
+                        "building_name": building_name,
+                        "market": market,
+                        "unit_name": unit_name,
+                        "unit_group": unit_group,
+                        "sqft": sqft,
+                        "effective_price": effective_price,
+                        "from_date": from_date,
+                        "to_date": to_date
+                    }, index=[0])
 
                     history_df = pd.concat([history_df, cur_history_df])
 
-                except Exception as e:
-                    print(f"Error processing history at index {pricing_id}: {e}")
+                except:
+                    continue
 
-        except Exception as e:
-            print(f"Error processing unit at index {unit_id}: {e}")
+        except:
+            continue
 
-    if len(history_df) == 0:
-        return pd.DataFrame(), 0
+    if history_df.empty:
+        return pd.DataFrame(), 0, None
 
-    # Convert dates and handle invalid dates
     history_df["from_date"] = pd.to_datetime(history_df["from_date"], errors='coerce')
     history_df["to_date"] = pd.to_datetime(history_df["to_date"], errors='coerce')
 
-    # Sort and calculate leased rate
     history_df.sort_values(by=["unit_name", "from_date"], inplace=True)
     history_df["next_from_date"] = history_df.groupby("unit_name")["from_date"].shift(-1)
     history_df["leased_rate"] = (history_df["to_date"] + pd.Timedelta(days=1) < history_df["next_from_date"]) | (history_df['next_from_date'].isna())
 
     history_df.dropna(subset=['unit_name'], inplace=True)
 
-    if len(history_df) == 0:
-        return pd.DataFrame(), 0
-    
-    # Expand rows for each date in range
+    if history_df.empty:
+        return pd.DataFrame(), 0, None
+
     expanded_history = []
     for _, row in history_df.iterrows():
         try:
@@ -242,26 +236,23 @@ def get_unit_history(property_details, building_name=None):
                     "date": single_date.strftime("%m/%d/%Y"),
                     "leased_rate": row["leased_rate"] if single_date == row["to_date"] else False
                 })
-        except Exception as e:
-            print(f"Error expanding history for row {row['unit_name']}: {e}")
+        except:
+            continue
 
     if not expanded_history:
-        return pd.DataFrame(), 0
+        return pd.DataFrame(), 0, None
 
     expanded_history_df = pd.DataFrame(expanded_history).dropna(subset=['unit_name'])
-    expanded_history_df.to_csv(f'data/HelloData/unit_history/{building_name} Unit History.csv')
+    expanded_history_df.to_csv(f'data/HelloData/unit_history/{building_name} Unit History.csv', index=False)
 
-    markets = pd.read_csv('data/markets.csv')
-
+    # Prepare a new market row
     market = expanded_history_df.loc[0, 'market']
+    if market:
+        return expanded_history_df, num_units, {"market": market, 
+                                                 "property": building_name}
+    else:
+        return expanded_history_df, num_units, None
 
-    # Check if this property is already in the file
-    if not ((markets['property'] == building_name) & (markets['market'] == market)).any():
-        new_row = pd.DataFrame({'market': [market], 'property': [building_name]})
-        markets = pd.concat([markets, new_row], ignore_index=True)
-        markets.to_csv('data/markets.csv', index=False)
-
-    return expanded_history_df, num_units
 
 # endregion
 
@@ -388,61 +379,57 @@ def get_rolling_rates(unit_history, building_name, cortland_mix):
 # region Get Rev / Avail Sqft.
 
 def get_revpasf(property, lat=None, lon=None, zip_code=None, cortland_mix=None):
-    
     net_leased_df = pd.DataFrame()
     rolling_rates_df = pd.DataFrame()
-    
+    market_update = None
+
     try:
         property_data = fetch_property_data(property=property, lat=lat, lon=lon, zip_code=zip_code)
-                    
+        
         if property_data:
             property_id = property_data[0].get("id")
             property_details = fetch_property_details(property_id)
-            # Fetch history and unit count only once
-            unit_history, num_units = get_unit_history(property_details, building_name=property)
-            
-            if len(unit_history) > 0 and num_units is not None:
+
+            unit_history, num_units, market_update = get_unit_history(property_details, building_name=property)
+
+            if not unit_history.empty and num_units is not None:
                 net_leased_df = get_net_leased(unit_history, num_units, property)
                 rolling_rates_df = get_rolling_rates(unit_history, property, cortland_mix)
             else:
                 print(f"Unit History issue in {property}")
+
     except Exception as e:
         raise RuntimeError(f"Error getting property data for {property}: {e}")
-    
-    if len(net_leased_df) == 0 or len(rolling_rates_df) == 0:
-        return pd.DataFrame()
-    
-    # Merge and calculate revenue per available square foot
+
+    if net_leased_df.empty or rolling_rates_df.empty:
+        return pd.DataFrame(), market_update
+
     metrics = pd.merge(rolling_rates_df, net_leased_df, on=['property', 'date'])
     metrics = metrics[['property', 'date', 'avg_rent_per_sqft', 'net_leased']]
     metrics['rev_pasf'] = metrics['avg_rent_per_sqft'] * metrics['net_leased']
     metrics['rev_pasf_rank'] = metrics.groupby('date')['rev_pasf'].rank(method='dense', ascending=False)
     metrics['year_month'] = metrics['date'].dt.to_period('M').astype(str)
     metrics['quarter'] = 'Q' + metrics['date'].dt.quarter.astype(str) + ' ' + metrics['date'].dt.year.astype(str)
-    
-    return metrics
+
+    return metrics, market_update
 
 # endregion
 
 # region Aggregate Metrics from Net Leased and Rent Roll
 
 def get_comp_metrics(property, lat, lon, zip_code):
-
     asset_code = dimasset[
         dimasset['ParentAssetName'].str.contains(property, case=False, regex=False)
     ]['AssetCode'].iloc[0]
 
     cortland_mix = get_cortland_mix(asset_code)
 
-    all_properties = []
-    # Append the main property (no zip code provided)
-    all_properties.append((property, lat, lon, zip_code))
-    
-    # Retrieve comp details (assumes get_comp_details returns a DataFrame)
-    comps = get_comp_details(property=property)
+    all_properties = [(property, lat, lon, zip_code)]
 
+    comps = get_comp_details(property=property)
     if comps is None:
-        return None
+        print(f'{property} no comps')
+        return None, []
 
     for i in range(len(comps)):
         building_name = comps['building_name'][i]
@@ -450,55 +437,65 @@ def get_comp_metrics(property, lat, lon, zip_code):
         lon = comps['lon'][i]
         zip_code = comps['zip_code'][i]
         all_properties.append((building_name, lat, lon, zip_code))
-    
+
     all_metrics = pd.DataFrame()
+    market_updates = []
+
     for prop, lat, lon, zip in all_properties:
         if prop is None:
             continue
         try:
-            metrics = get_revpasf(prop, lat=lat, lon=lon, zip_code=zip, cortland_mix=cortland_mix)
+            metrics, market_update = get_revpasf(prop, lat=lat, lon=lon, zip_code=zip, cortland_mix=cortland_mix)
             all_metrics = pd.concat([all_metrics, metrics])
+            if market_update:
+                market_updates.append(market_update)
         except Exception as e:
             print(e)
             continue
-    
-    return all_metrics.reset_index(drop=True)
+
+    return all_metrics.reset_index(drop=True), market_updates
 
 # endregion
 
 # region Process Property
 
 def process_property(args):
-    # Unpack the arguments for this property
     property, lat, lon = args
     zip_code = None
     file_path = f"data/HelloData/comp_metrics/{property} Comp Metrics.csv"
-    
-    # Skip if the file already exists
-    # if os.path.exists(file_path):
-    #     return None
 
-    # Call get_comp_metrics with the property details
-    metrics = get_comp_metrics(property, lat, lon, zip_code)
+    metrics, market_updates = get_comp_metrics(property, lat, lon, zip_code)
 
-    if metrics is not None:
+    if metrics is not None and not metrics.empty:
         metrics.to_csv(file_path, index=False)
-    
-    return property
+
+    return market_updates
+
 
 # endregion
 
 if __name__ == '__main__':
-    # Build a list of (property, lat, lon) tuples from your dimasset DataFrame
+
     args_list = [
         (row['ParentAssetName'], row['Latitude'], row['Longitude'])
         for _, row in dimasset.iterrows()
     ]
 
     pd.DataFrame(columns=['market', 'property']).to_csv('data/markets.csv', index=False)
-    
-    # Create a multiprocessing pool and process each property concurrently
+
+    all_market_updates = []
+
     with Pool(cpu_count()) as pool:
-        # Wrap the pool iterator with tqdm for a progress bar
-        for _ in tqdm(pool.imap_unordered(process_property, args_list), total=len(args_list)):
-            pass
+        for market_updates in tqdm(pool.imap_unordered(process_property, args_list), total=len(args_list)):
+            all_market_updates.extend(market_updates)
+
+    # Final write to markets.csv
+    if all_market_updates:
+        existing_markets = pd.read_csv('data/markets.csv')
+        updates_df = pd.DataFrame(all_market_updates)
+        combined = pd.concat([existing_markets, updates_df], ignore_index=True)
+        combined.drop_duplicates(subset=['market', 'property'], inplace=True)
+        combined.to_csv('data/markets.csv', index=False)
+
+
+    

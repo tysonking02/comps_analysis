@@ -12,9 +12,9 @@ assetdetailactive = pd.read_csv('data/vw_AssetDetailActive.csv', usecols=['Asset
 
 dimasset = dimasset.merge(assetdetailactive, on='AssetCode')
 
-factunitlatest = pd.read_csv('data/FactUnitLatest_filtered.csv')
+factunitlatest = pd.read_csv('data/FactUnitLatest.csv')
 
-factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal_filtered.csv')
+factaccountgrouptotal = pd.read_csv('data/FactGLAccountGroupTotal.csv')
 
 market_list = pd.read_csv('data/markets.csv')['market'].unique()
 market_list = sorted(market_list)
@@ -179,7 +179,6 @@ if submit_button and selected_rollup == 'Property':
     quarter_metrics = income_metrics
     income_metrics["quarter"] = income_metrics["month"].dt.to_period('Q').dt.to_timestamp()
     quarter_metrics = income_metrics.groupby('quarter').agg(
-        Amount=('Amount', 'sum'),
         count=('month', 'count')
     ).reset_index()
 
@@ -202,7 +201,6 @@ if submit_button and selected_rollup == 'Property':
     avg_metrics = metrics.sort_values('date').groupby(['property', 'period', 'Time Period']).agg({
         "rev_pasf": "mean",
         "rev_pasf_avg": "mean",
-        "Amount": "first"
     }).reset_index()
 
 
@@ -212,9 +210,6 @@ if submit_button and selected_rollup == 'Property':
 
     avg_metrics['rev_pasf_vs_avg'] = avg_metrics['rev_pasf'] - avg_metrics['rev_pasf_avg']
     avg_metrics['prev_rev_pasf_vs_avg'] = avg_metrics['rev_pasf_vs_avg'].shift(1)
-
-    avg_metrics['prev_income'] = avg_metrics['Amount'].shift(1)
-    avg_metrics['income_growth'] = avg_metrics['Amount'] - avg_metrics['prev_income']
 
     avg_metrics = avg_metrics[avg_metrics['property'] == selected_property]
 
@@ -234,8 +229,8 @@ if submit_button and selected_rollup == 'Property':
 
     avg_metrics['period_quality'] = avg_metrics.apply(classify_quality, axis=1)
 
-    avg_metrics = avg_metrics.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'rev_pasf', 'rev_pasf_vs_avg', 'period_quality', 'income_growth']]
-    avg_metrics.rename(columns={"rev_pasf": "RevPASF", "rev_pasf_vs_avg": "RevPASF vs Avg.", "rev_pasf_rank": "Rank", "prev_rank": "T1 Rank", "period_quality": "Quality", "income_growth": "Rental Income Growth/Decline"}, inplace=True)
+    avg_metrics = avg_metrics.sort_values('period')[['Time Period', 'rev_pasf_rank', 'prev_rank', 'rev_pasf', 'rev_pasf_vs_avg', 'period_quality']]
+    avg_metrics.rename(columns={"rev_pasf": "RevPASF", "rev_pasf_vs_avg": "RevPASF vs Avg.", "rev_pasf_rank": "Rank", "prev_rank": "T1 Rank", "period_quality": "Quality"}, inplace=True)
 
     def highlight_quality(val):
         if val == 'Good':
@@ -263,10 +258,8 @@ if submit_button and selected_rollup == 'Property':
             'RevPASF vs Avg.': '${:.2f}',
             'Rank': '{:.0f}',
             'T1 Rank': '{:.0f}',
-            'Rental Income Growth/Decline': lambda x: f"${abs(x):,.0f}"
         })
         .applymap(highlight_quality, subset=['Quality'])
-        .applymap(highlight_growth, subset=['Rental Income Growth/Decline'])
     )
 
     st.subheader(f"{time_frame} Rev / Avail Sqft. Rank for {selected_property}")

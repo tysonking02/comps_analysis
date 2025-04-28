@@ -1,8 +1,14 @@
-select AssetCode, MonthID, Amount
-from acct_FactGLAccountGroupTotal
-where GLAccountGroupName = 'IS - Rental Income' and 
-	  FinanceType = 'Actuals' and
-	  IsClosedAcctPeriod = 1 and
-	  IsFullMonth = 1 and
-	  AssetCode is not null and
-	  MonthID >= 202401;
+SELECT 
+    AssetCode,
+    MonthID,
+    SUM(CASE WHEN FinanceType = 'Actuals' THEN Amount ELSE 0 END) AS ActualAmount,
+    SUM(CASE WHEN FinanceType = 'Budget' THEN Amount ELSE 0 END) AS BudgetAmount
+FROM acct_FactGLAccountGroupTotal
+WHERE 
+    GLAccountGroupName = 'IS - Rental Income' AND
+    FinanceType IN ('Actuals', 'Budget') AND
+    IsClosedAcctPeriod = 1 AND
+    IsFullMonth = 1 AND
+    AssetCode IS NOT NULL AND
+    MonthID >= 202401
+GROUP BY AssetCode, MonthID
