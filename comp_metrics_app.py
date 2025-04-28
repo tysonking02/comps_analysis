@@ -347,7 +347,11 @@ elif submit_button and selected_rollup == 'Market':
             scale=alt.Scale(domain=[ymin, ymax]),
             title='Rev PASF vs. Avg.'
         ),
-        tooltip=['date:T', 'rev_pasf_vs_avg:Q', 'property:N']
+        tooltip=[
+            alt.Tooltip('date:T', title='Date'),
+            alt.Tooltip('rev_pasf_vs_avg:Q', title='Rev PASF vs. Avg.', format=".3f"),
+            alt.Tooltip('property:N', title='# Properties')
+        ]
     )
 
     zero_line = alt.Chart(pd.DataFrame({'y': [0]})).mark_rule(strokeDash=[4, 4], color='gray').encode(
@@ -372,17 +376,19 @@ elif submit_button and selected_rollup == 'Market':
         y = cortland_metrics['period'].dt.year
         cortland_metrics['Time Period'] = ['Q' + str(qq) + ' ' + str(yy) for qq, yy in zip(q, y)]
 
+    num_properties = cortland_metrics.groupby(['property', 'period', 'Time Period']).tail(1)[['period', 'Time Period', 'property']]
+
     # Get the first date of each period
-    avg_metrics = cortland_metrics.sort_values('date').groupby(['period', 'Time Period', 'property']).agg({
+    avg_metrics = cortland_metrics.sort_values('date').groupby(['period', 'Time Period']).agg({
         "rev_pasf_vs_avg": "mean",
-    }).reset_index()
+    }).merge(num_properties, on=['period', 'Time Period']).drop_duplicates(subset=['Time Period'], keep='last').reset_index()
 
     avg_metrics['prev_rev_pasf_vs_avg'] = avg_metrics['rev_pasf_vs_avg'].shift(1)
 
     def classify_quality(row):
-        if row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg']:
+        if row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg'] * 1.05:
             return 'Good'
-        elif row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg']:
+        elif row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg'] * .95:
             return 'Poor'
         return 'Neutral'
 
