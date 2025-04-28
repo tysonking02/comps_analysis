@@ -221,9 +221,9 @@ if submit_button and selected_rollup == 'Property':
         elif row['rev_pasf_rank'] > row['prev_rank']:
             return 'Poor'
         else:
-            if row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg']:
+            if row['rev_pasf_vs_avg'] > row['prev_rev_pasf_vs_avg'] * 1.05:
                 return 'Good'
-            elif row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg']:
+            elif row['rev_pasf_vs_avg'] < row['prev_rev_pasf_vs_avg'] * .95:
                 return 'Poor'
             return 'Neutral'
 
@@ -276,17 +276,18 @@ if submit_button and selected_rollup == 'Property':
 
     with st.expander("Period Quality Breakdown"):
         st.markdown(f"""
-        - **Rank Improves (e.g., 2 → 1):**  
-        Period quality is **Good**
+        - **RevPASF Rank Improves (e.g., 2 → 1):**  
+        → Period quality is **Good**
 
-        - **Rank Declines (e.g., 1 → 2):**  
-        Period quality is **Bad**
+        - **RevPASF Rank Declines (e.g., 1 → 2):**  
+        → Period quality is **Poor**
 
-        - **Rank Stays the Same:**  
-        Compare the **RevPASf {time_frame} change** to the **Comp Set Mean**:
-            - If RevPASf increased relative to the Comp Mean → **Good**  
-            - If RevPASf decreased relative to the Comp Mean → **Bad**
-        """)
+        - **RevPASF Rank Stays the Same:**  
+        Compare the **RevPASF {time_frame}** change to the **Comp Set Average**:
+            - **Increases** → Period quality is **Good**
+            - **Decreases** → Period quality is **Poor**
+            - **Stays within ±5%** → Period quality is **Neutral**
+            """)
 
 elif submit_button and selected_rollup == 'Market':
 
@@ -409,10 +410,18 @@ elif submit_button and selected_rollup == 'Market':
         avg_metrics
         .style
         .format({
-            'RevPASF vs Avg.': '${:.2f}',
+            'RevPASF vs Avg.': '${:.3f}',
         })
         .applymap(highlight_quality, subset=['Quality'])
     )
 
     st.subheader(f"{time_frame} Rev / Avail Sqft. for {selected_market}")
     st.dataframe(styled_df)
+
+    with st.expander("Period Quality Breakdown"):
+        st.markdown(f"""
+    Compare the **RevPASFs {time_frame} change** to the **Comp Set Mean**:
+    - If RevPASFs increased relative to the Comp Mean → **Good**  
+    - If RevPASFs decreased relative to the Comp Mean → **Bad**  
+    - **Stays within ±5%** → Period quality is **Neutral**
+    """)
